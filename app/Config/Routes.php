@@ -49,4 +49,6 @@ $routes->get('/', 'Home::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
-$routes->get('listar', 'UserController::index');
+$routes->get('login', 'UserController::index');
+$routes->get('listar', 'UserController::listar');
+$routes->get('catalogo', 'LibrosController::index');
