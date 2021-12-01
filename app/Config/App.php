@@ -23,7 +23,9 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/biblioteca/public/';
+    public $baseURL = 'http://localhost/biblioteca/public';
+    //public $baseURL = 'http://localhost:8080/biblioteca';
+
 
     /**
      * --------------------------------------------------------------------------
@@ -36,7 +38,8 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $indexPage = 'index.php';
+    //public $indexPage = 'index.php';
+    public $indexPage = '';
 
     /**
      * --------------------------------------------------------------------------

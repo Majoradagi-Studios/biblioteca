@@ -7,6 +7,12 @@ class UserController extends Controller{
 
     public function index()
     {
+        return view('Usuarios/login');
+    }
+
+    public function login()
+    {
+        
         return view('Usuarios/listar');
     }
 
