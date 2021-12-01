@@ -50,6 +50,8 @@ $routes->get('/login', 'Home::login');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
-$routes->get('login', 'UserController::index');
-$routes->get('listar', 'UserController::listar');
-$routes->get('catalogo', 'LibrosController::index');
+
+//Mis rutas
+$routes->get('/signin', 'SigninController::index');
+$routes->get('/signup', 'SignupController::index');
+$routes->get('/catalogo', 'LibrosController::index', ['filter' => 'authGuard']);

@@ -10,8 +10,9 @@ class UserController extends Controller{
         return view('Usuarios/login');
     }
 
-    public function listar()
+    public function login()
     {
+        
         return view('Usuarios/listar');
     }
 
