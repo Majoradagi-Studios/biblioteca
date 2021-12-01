@@ -7,6 +7,8 @@ class LibrosController extends Controller{
 
     public function index()
     {
+        $session = session();
+        echo "Hello : ".$session->get('nombre');
         return view('catalogo');
     }
 }
