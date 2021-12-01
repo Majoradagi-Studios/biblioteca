@@ -40,19 +40,18 @@
                         <img src="images/logo.png" class="logotipo">
 					</span>
 				</div>
+ 
+				<form action="<?php echo base_url(); ?>/SigninController/loginAuth" class="login100-form validate-form"  method="post">
 
-				
-
-				<form class="login100-form validate-form"  method="post">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Se requiere un usuario">
 						<span class="label-input100">Usuario</span>
-						<input class="input100" type="text" name="matricula" placeholder="Ingrese su matrícula">
+						<input class="input100" type="text" name="matricula" value="<?= set_value('matricula') ?>" placeholder="Ingrese su matrícula">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Se require una contraseña">
 						<span class="label-input100">Contraseña</span>
-						<input class="input100" type="password" name="contraseña" placeholder="*********" >
+						<input class="input100" type="password" name="password" placeholder="*********" >
 						<span class="focus-input100"></span>
 					</div>
 

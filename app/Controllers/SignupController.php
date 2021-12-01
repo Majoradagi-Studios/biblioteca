@@ -10,7 +10,7 @@ class SignupController extends Controller
     {
         helper(['form']);
         $data = [];
-        echo view('signup', $data);
+        echo view('Usuarios/signup', $data);
     }
   
     public function store()
