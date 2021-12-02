@@ -4,3 +4,255 @@ CRITICAL - 2021-12-02 06:27:51 --> The framework needs the following extension(s
 #2 C:\xampp\htdocs\biblioteca\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
 #3 C:\xampp\htdocs\biblioteca\public\index.php(28): require('C:\\xampp\\htdocs...')
 #4 {main}
+CRITICAL - 2021-12-02 14:02:44 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 14:03:11 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 14:16:07 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 14:17:21 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 14:17:26 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 14:17:43 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 14:17:46 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 14:19:35 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 14:22:35 --> Undefined constant "autores"
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('Autores/listar', Array, true)
+#3 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(12): view('Autores/listar')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-02 14:25:14 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 14:26:15 --> Undefined variable $libro
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-02 14:26:41 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:26:41 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-02 14:30:05 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:30:05 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-02 14:30:07 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:30:07 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-02 14:30:13 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:30:13 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-02 14:30:38 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:30:38 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-02 14:32:54 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:32:54 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-02 14:32:55 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:32:55 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-02 14:35:06 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:35:06 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-02 14:43:14 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:43:14 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-02 14:45:21 --> Call to undefined method App\Models\Autor::doFindAll
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\Model->__call('doFindAll', Array)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-02 14:45:40 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:45:40 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-02 14:47:47 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2021-12-02 14:47:47 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(11): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-02 14:47:59 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Views\Autores\listar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('Autores/listar', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(12): view('Autores/listar', Array)
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 14:48:21 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Views\Autores\listar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('Autores/listar', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(12): view('Autores/listar', Array)
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 14:49:15 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Views\Autores\listar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('Autores/listar', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(12): view('Autores/listar', Array)
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 14:49:22 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Views\Autores\listar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('Autores/listar', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(12): view('Autores/listar', Array)
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 14:49:24 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Views\Autores\listar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('Autores/listar', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(12): view('Autores/listar', Array)
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 15:16:18 --> Undefined variable $libro
+#0 C:\xampp\htdocs\biblioteca\app\Views\Autores\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('Autores/listar', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(12): view('Autores/listar', Array)
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->index()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
