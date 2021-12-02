@@ -267,13 +267,17 @@
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
               <h4 class="page-title">Editoriales</h4>
-              <div class="ms-auto text-end">
+              
+              <!--<div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#" class="btn btn-success rounded-pill">Guardar <i class="fa fa-save"> </i></a></li>
+                    <li class="breadcrumb-item"><a href="#" class="btn btn-success rounded-pill" type="submit">Guardar <i class="fa fa-save"> </i></a></li>
                   </ol>
                 </nav>
               </div>
+              -->
+            
+            
             </div>
           </div>
         </div>
@@ -284,26 +288,27 @@
         <!-- Container fluid  -->
         <!-- ============================================================== -->
         <div class="container-fluid">
-          <!-- ============================================================== -->
-          <!-- Start Page Content -->
-          <!-- ============================================================== -->
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Agregar editorial</h5> <br>
-                  
-                  <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Nombre editorial</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                        </div>
-                    </form>
 
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Ingresar Nombre de la Editorial</h5>
+            <p class="card-text">
+
+              <form method="post" action="<?=base_url('admin/editorial/guardar')?>" enctype="multipart/form-data">
+
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input id="nombre" class="form-control" type="text" name="nombre">
                 </div>
-              </div>
-            </div>
+
+                <button class="btn btn-success rounded-pill" type="submit">Guardar  <i class="fa fa-save"></i></button>
+              </form>
+
+            </p>
+
           </div>
+        </div>
+            
           <!-- ============================================================== -->
           <!-- End PAge Content -->
           <!-- ============================================================== -->
