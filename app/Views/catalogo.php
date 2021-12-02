@@ -91,10 +91,12 @@
         <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-user fa-fw"></i><?php echo $session->get('nombre');?></a>
+                    <i class="fas fa-user fa-fw"></i>Bienvenido: <?php echo $session->get('nombre')." ".$session->get('apellidoP');?></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Administrar</a></li>
+                    <?php if($session->get('rol') == 1  ): ?>
+                    <li><a class="dropdown-item" href="<?php echo base_url(); ?>/SigninController/logout">Administrar</a></li>
                     <li><hr class="dropdown-divider" /></li>
+                    <?php endif;?>
                     <li><a class="dropdown-item" href="<?php echo base_url(); ?>/SigninController/logout">Cerrar sesión</a></li>
                 </ul>
             </li>
