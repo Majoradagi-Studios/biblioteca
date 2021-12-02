@@ -29,8 +29,12 @@ class SigninController extends Controller{
             if($authenticatePassword){
                 $ses_data = [
                     'idUsuario' => $data['idUsuario'],
-                    'nombre' => $data['nombre'],
                     'matricula' => $data['matricula'],
+                    'nombre' => $data['nombre'],
+                    'apellidoP' => $data['apellidoP'],
+                    'apellidoM' => $data['apellidoM'],
+                    'grupo' => $data['grupo'],
+                    'rol' => $data['rol'],
                     'isLoggedIn' => TRUE
                 ];
 
