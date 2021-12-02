@@ -56,3 +56,4 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/signup', 'SignupController::index');
 $routes->get('/catalogo', 'LibrosController::index', ['filter' => 'authGuard']);
+$routes->get('/autores', 'AutoresController::index');
