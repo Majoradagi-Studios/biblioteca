@@ -54,10 +54,6 @@ $routes->get('/admin/ejemplar/listar', 'Home::adminlistarejemplar');
 $routes->get('/admin/ejemplar/create', 'Home::admincrearejemplar');
 $routes->get('/admin/ejemplar/edit', 'Home::admineditarejemplar');
 
-$routes->get('/admin/autor/listar', 'Home::adminlistarautor');
-$routes->get('/admin/autor/create', 'Home::admincrearautor');
-$routes->get('/admin/autor/edit', 'Home::admineditarautor');
-
 $routes->get('/admin/libro/listar', 'Home::adminlistarlibro');
 $routes->get('/admin/libro/create', 'Home::admincrearlibro');
 $routes->get('/admin/libro/edit', 'Home::admineditarlibro');

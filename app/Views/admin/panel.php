@@ -197,7 +197,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin"
                   aria-expanded="false"
                   ><i class="mdi mdi-view-dashboard"></i
                   ><span class="hide-menu">Dashboard</span></a
@@ -206,7 +206,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin/categoria/listar"
                   aria-expanded="false"
                   ><i class="mdi mdi-note-outline"></i
                   ><span class="hide-menu">Categoría</span></a
@@ -215,7 +215,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin/autor/listar"
                   aria-expanded="false"
                   ><i class="mdi mdi-account"></i
                   ><span class="hide-menu">Autor</span></a
@@ -224,7 +224,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin/editorial/listar"
                   aria-expanded="false"
                   ><i class="mdi mdi-bookmark"></i
                   ><span class="hide-menu">Editorial</span></a
@@ -233,7 +233,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin/ejemplar/listar"
                   aria-expanded="false"
                   ><i class="mdi mdi-book-open"></i
                   ><span class="hide-menu">Ejemplar</span></a
@@ -242,7 +242,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin/libro/listar"
                   aria-expanded="false"
                   ><i class="mdi mdi-book"></i
                   ><span class="hide-menu">Libro</span></a
