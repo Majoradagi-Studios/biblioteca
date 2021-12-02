@@ -32,8 +32,31 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+
+//RUTAS PARA PROBAR EL DISEÑO
 $routes->get('/login', 'Home::login');
-$routes->get('/admin', 'Home::admin');
+
+$routes->get('/admin', 'Home::admin', ['filter' => 'authGuard']);
+
+$routes->get('/admin/categoria/listar', 'Home::adminlistarcategoria');
+$routes->get('/admin/categoria/create', 'Home::admincrearcategoria');
+$routes->get('/admin/categoria/edit', 'Home::admineditarcategoria');
+
+$routes->get('/admin/autor/listar', 'Home::adminlistarautor');
+$routes->get('/admin/autor/create', 'Home::admincrearautor');
+$routes->get('/admin/autor/edit', 'Home::admineditarautor');
+
+$routes->get('/admin/editorial/listar', 'Home::adminlistareditorial');
+$routes->get('/admin/editorial/create', 'Home::admincreareditorial');
+$routes->get('/admin/editorial/edit', 'Home::admineditareditorial');
+
+$routes->get('/admin/ejemplar/listar', 'Home::adminlistarejemplar');
+$routes->get('/admin/ejemplar/create', 'Home::admincrearejemplar');
+$routes->get('/admin/ejemplar/edit', 'Home::admineditarejemplar');
+
+$routes->get('/admin/libro/listar', 'Home::adminlistarlibro');
+$routes->get('/admin/libro/create', 'Home::admincrearlibro');
+$routes->get('/admin/libro/edit', 'Home::admineditarlibro');
 
 /*
  * --------------------------------------------------------------------

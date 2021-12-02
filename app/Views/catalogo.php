@@ -84,7 +84,7 @@
 
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-1 " href="index.html"><img src="img/logoCBTis.png"></a>
+        <a class="navbar-brand ps-1 " href="<?php echo base_url(); ?>/catalogo"><img src="img/logoCBTis.png"></a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar-->
@@ -94,7 +94,7 @@
                     <i class="fas fa-user fa-fw"></i>Bienvenido: <?php echo $session->get('nombre')." ".$session->get('apellidoP');?></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <?php if($session->get('rol') == 1  ): ?>
-                    <li><a class="dropdown-item" href="<?php echo base_url(); ?>/SigninController/logout">Administrar</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url(); ?>/admin">Administrar</a></li>
                     <li><hr class="dropdown-divider" /></li>
                     <?php endif;?>
                     <li><a class="dropdown-item" href="<?php echo base_url(); ?>/SigninController/logout">Cerrar sesión</a></li>
