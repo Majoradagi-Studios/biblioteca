@@ -36,7 +36,7 @@ $routes->get('/', 'Home::index');
 //RUTAS PARA PROBAR EL DISEÑO
 $routes->get('/login', 'Home::login');
 
-$routes->get('/admin', 'Home::admin');
+$routes->get('/admin', 'Home::admin', ['filter' => 'authGuard']);
 
 $routes->get('/admin/categoria/listar', 'Home::adminlistarcategoria');
 $routes->get('/admin/categoria/create', 'Home::admincrearcategoria');
