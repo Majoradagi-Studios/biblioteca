@@ -17,12 +17,12 @@ class SignupController extends Controller
     {
         helper(['form']);
         $rules = [
-            'matricula'         => 'required|min_length[4]|max_length[100]|is_unique[usuarios.matricula]',
-            'nombre'          => 'required|min_length[2]|max_length[50]',
-            'apellidoP'          => 'required|min_length[2]|max_length[50]',
-            'apellidoM'          => 'required|min_length[2]|max_length[50]',
-            'grupo'          => 'required|min_length[2]|max_length[50]',
-            'password'      => 'required|min_length[4]|max_length[50]',
+            'matricula'         => 'required|min_length[8]|max_length[10]|is_unique[usuarios.matricula]',
+            'nombre'          => 'required|min_length[3]|max_length[100]',
+            'apellidoP'          => 'required|min_length[3]|max_length[50]',
+            'apellidoM'          => 'required|min_length[3]|max_length[50]',
+            'grupo'          => 'required|min_length[2]|max_length[15]',
+            'password'      => 'required|min_length[8]|max_length[150]',
             'confirmpassword'  => 'matches[password]'
         ];
           
@@ -44,7 +44,7 @@ class SignupController extends Controller
             return redirect()->to('/signin');
         }else{
             $data['validation'] = $this->validator;
-            echo view('signup', $data);
+            echo view('Usuarios/signup', $data);
         }
           
     }

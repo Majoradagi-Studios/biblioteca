@@ -40,6 +40,12 @@
                         <img src="images/logo.png" class="logotipo">
 					</span>
 				</div>
+
+				<?php if(isset($validation)):?>
+                <div class="alert alert-warning">
+                   <?= $validation->listErrors() ?>
+                </div>
+                <?php endif;?>
  
 				<form action="<?php echo base_url(); ?>/SigninController/loginAuth" class="login100-form validate-form"  method="post">
 
