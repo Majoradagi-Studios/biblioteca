@@ -12,10 +12,10 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/favicon/favicon.ico"
+      href="../../images/favicon/favicon.ico"
     />
     <!-- Custom CSS -->
-    <link href="backend/dist/css/style.min.css" rel="stylesheet" />
+    <link href="../../backend/dist/css/style.min.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -55,13 +55,13 @@
             <!-- ============================================================== -->
             <!-- Logo -->
             <!-- ============================================================== -->
-            <a class="navbar-brand" href="<?php echo base_url(); ?>/admin">
+            <a class="navbar-brand" href="index.html">
               <!-- Logo icon -->
               <b class="logo-icon ps-2">
                 <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                 <!-- Dark Logo icon -->
                 <img
-                  src="backend/assets/images/logo-icon.png"
+                  src="../../backend/assets/images/logo-icon.png"
                   alt="homepage"
                   class="light-logo"
                   width="25"
@@ -72,7 +72,7 @@
               <span class="logo-text ms-2">
                 <!-- dark Logo text -->
                 <img
-                  src="backend/assets/images/logo-texto3.png"
+                  src="../../backend/assets/images/logo-texto3.png"
                   alt="homepage"
                   class="light-logo center"
                 />
@@ -165,13 +165,12 @@
                 </a>
                 <ul
                   class="dropdown-menu dropdown-menu-end user-dd animated"
-                  aria-labelledby="navbarDropdown">
+                  aria-labelledby="navbarDropdown"
+                >
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="<?php echo base_url(); ?>/catalogo">
-                    <i class="fa fa-undo me-1 ms-1"></i> Regresar al catalogo</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="<?php echo base_url(); ?>/SigninController/logout">
-                    <i class="fa fa-power-off me-1 ms-1"></i> Cerrar sesión</a>
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    ><i class="fa fa-power-off me-1 ms-1"></i> Cerrar sesión</a
+                  >
                 </ul>
               </li>
               <!-- ============================================================== -->
@@ -267,7 +266,7 @@
         <div class="page-breadcrumb">
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-              <h4 class="page-title">Categorías</h4>
+              <h4 class="page-title">Autores</h4>
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
@@ -292,14 +291,13 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Usuarios</h5>
+                  <h5 class="card-title">Autor</h5>
                   <table class="table">
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col" class="text-center">#</th>
-                                <th scope="col" class="text-center">Código Dewey</th>
+                                <th scope="col" class="text-center">Apellido</th>
                                 <th scope="col" class="text-center">Nombre</th>
-                                <th scope="col" class="text-center">Descripción</th>
                                 <th class="center text-danger"><i class="fa fa-bolt"> </i></th>
                             </tr>
                         </thead>
@@ -308,7 +306,6 @@
                                 <th scope="row" class="text-center">1</th>
                                     <td >Mark</td>
                                     <td>Otto</td>
-                                    <td>@mdo</td>
                                     <td class="center">
                                         <div class="btn-group" role="group" aria-label="Second group">
                                             <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
@@ -357,17 +354,17 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="backend/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../backend/assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="backend/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../backend/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="backend/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="backend/assets/extra-libs/sparkline/sparkline.js"></script>
+    <script src="../../backend/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../../backend/assets/extra-libs/sparkline/sparkline.js"></script>
     <!--Wave Effects -->
-    <script src="backend/dist/js/waves.js"></script>
+    <script src="../../backend/dist/js/waves.js"></script>
     <!--Menu sidebar -->
-    <script src="backend/dist/js/sidebarmenu.js"></script>
+    <script src="../../backend/dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
-    <script src="backend/dist/js/custom.min.js"></script>
+    <script src="../../backend/dist/js/custom.min.js"></script>
   </body>
 </html>
