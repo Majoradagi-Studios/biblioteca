@@ -12,10 +12,10 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/favicon/favicon.ico"
+      href="../../images/favicon/favicon.ico"
     />
     <!-- Custom CSS -->
-    <link href="backend/dist/css/style.min.css" rel="stylesheet" />
+    <link href="../../backend/dist/css/style.min.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -61,7 +61,7 @@
                 <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                 <!-- Dark Logo icon -->
                 <img
-                  src="backend/assets/images/logo-icon.png"
+                  src="../../backend/assets/images/logo-icon.png"
                   alt="homepage"
                   class="light-logo"
                   width="25"
@@ -72,7 +72,7 @@
               <span class="logo-text ms-2">
                 <!-- dark Logo text -->
                 <img
-                  src="backend/assets/images/logo-texto3.png"
+                  src="../../backend/assets/images/logo-texto3.png"
                   alt="homepage"
                   class="light-logo center"
                 />
@@ -266,11 +266,11 @@
         <div class="page-breadcrumb">
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-              <h4 class="page-title">Categorías</h4>
+              <h4 class="page-title">Editoriales</h4>
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#" class="btn btn-success rounded-pill">Agregar <i class="fa fa-plus"> </i></a></li>
+                    <li class="breadcrumb-item"><a href="#" class="btn btn-success rounded-pill">Guardar <i class="fa fa-save"> </i></a></li>
                   </ol>
                 </nav>
               </div>
@@ -291,32 +291,15 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Usuarios</h5>
-                  <table class="table">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" class="text-center">#</th>
-                                <th scope="col" class="text-center">Código Dewey</th>
-                                <th scope="col" class="text-center">Nombre</th>
-                                <th scope="col" class="text-center">Descripción</th>
-                                <th class="center text-danger"><i class="fa fa-bolt"> </i></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row" class="text-center">1</th>
-                                    <td >Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td class="center">
-                                        <div class="btn-group" role="group" aria-label="Second group">
-                                            <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
-                                            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                  <h5 class="card-title">Agregar editorial</h5> <br>
+                  
+                  <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nombre editorial</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                    </form>
+
                 </div>
               </div>
             </div>
@@ -356,17 +339,17 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="backend/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../backend/assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="backend/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../backend/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="backend/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="backend/assets/extra-libs/sparkline/sparkline.js"></script>
+    <script src="../../backend/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../../backend/assets/extra-libs/sparkline/sparkline.js"></script>
     <!--Wave Effects -->
-    <script src="backend/dist/js/waves.js"></script>
+    <script src="../../backend/dist/js/waves.js"></script>
     <!--Menu sidebar -->
-    <script src="backend/dist/js/sidebarmenu.js"></script>
+    <script src="../../backend/dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
-    <script src="backend/dist/js/custom.min.js"></script>
+    <script src="../../backend/dist/js/custom.min.js"></script>
   </body>
 </html>
