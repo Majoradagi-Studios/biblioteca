@@ -55,7 +55,7 @@
             <!-- ============================================================== -->
             <!-- Logo -->
             <!-- ============================================================== -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="<?php echo base_url(); ?>/admin">
               <!-- Logo icon -->
               <b class="logo-icon ps-2">
                 <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -165,12 +165,13 @@
                 </a>
                 <ul
                   class="dropdown-menu dropdown-menu-end user-dd animated"
-                  aria-labelledby="navbarDropdown"
-                >
+                  aria-labelledby="navbarDropdown">
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="javascript:void(0)"
-                    ><i class="fa fa-power-off me-1 ms-1"></i> Cerrar sesión</a
-                  >
+                  <a class="dropdown-item" href="<?php echo base_url(); ?>/catalogo">
+                    <i class="fa fa-undo me-1 ms-1"></i> Regresar al catalogo</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="<?php echo base_url(); ?>/SigninController/logout">
+                    <i class="fa fa-power-off me-1 ms-1"></i> Cerrar sesión</a>
                 </ul>
               </li>
               <!-- ============================================================== -->
