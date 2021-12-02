@@ -55,7 +55,7 @@
             <!-- ============================================================== -->
             <!-- Logo -->
             <!-- ============================================================== -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="<?php echo base_url(); ?>/admin">
               <!-- Logo icon -->
               <b class="logo-icon ps-2">
                 <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -165,12 +165,13 @@
                 </a>
                 <ul
                   class="dropdown-menu dropdown-menu-end user-dd animated"
-                  aria-labelledby="navbarDropdown"
-                >
+                  aria-labelledby="navbarDropdown">
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="javascript:void(0)"
-                    ><i class="fa fa-power-off me-1 ms-1"></i> Cerrar sesión</a
-                  >
+                  <a class="dropdown-item" href="<?php echo base_url(); ?>/catalogo">
+                    <i class="fa fa-undo me-1 ms-1"></i> Regresar al catalogo</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="<?php echo base_url(); ?>/SigninController/logout">
+                    <i class="fa fa-power-off me-1 ms-1"></i> Cerrar sesión</a>
                 </ul>
               </li>
               <!-- ============================================================== -->
@@ -192,11 +193,10 @@
         <div class="scroll-sidebar">
           <!-- Sidebar navigation-->
           <nav class="sidebar-nav">
-            <ul id="sidebarnav" class="pt-4">
-              <li class="sidebar-item">
+          <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin"
                   aria-expanded="false"
                   ><i class="mdi mdi-view-dashboard"></i
                   ><span class="hide-menu">Dashboard</span></a
@@ -205,7 +205,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin/categoria/listar"
                   aria-expanded="false"
                   ><i class="mdi mdi-note-outline"></i
                   ><span class="hide-menu">Categoría</span></a
@@ -214,7 +214,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin/autor/listar"
                   aria-expanded="false"
                   ><i class="mdi mdi-account"></i
                   ><span class="hide-menu">Autor</span></a
@@ -223,7 +223,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin/editorial/listar"
                   aria-expanded="false"
                   ><i class="mdi mdi-bookmark"></i
                   ><span class="hide-menu">Editorial</span></a
@@ -232,7 +232,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin/ejemplar/listar"
                   aria-expanded="false"
                   ><i class="mdi mdi-book-open"></i
                   ><span class="hide-menu">Ejemplar</span></a
@@ -241,7 +241,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="index.html"
+                  href="<?php echo base_url(); ?>/admin/libro/listar"
                   aria-expanded="false"
                   ><i class="mdi mdi-book"></i
                   ><span class="hide-menu">Libro</span></a
