@@ -24,8 +24,21 @@ class  AutoresController extends Controller{
     }
 
     public function guardarAutor(){  
-        this->requiest->getVar('nombreA');
-        print_r($nombreA);
-        return redirect()->to('/admin/autor/listar');
+        $autor = new Autor();
+        $datos=[
+            'nombreA'=>$this->request->getVar('nombreA'),
+            'apellidoA'=>$this->request->getVar('apellidoA')  
+        ];
+        $autor->insert($datos);
+    }
+
+    public function eliminarAutor($id=null){
+        
+        $autor = new Autor();
+        //$datosAutor = $autor->where('idAutor',$id)->first();
+
+        $autor->where('idAutor',$id)->delete($id);
+        
+        return $this->response->redirect(site_url('/admin/autor/listar'));
     }
 }

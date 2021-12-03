@@ -46,7 +46,7 @@
                             <input type="text" class="form-control" id="nombreA" placeholder="Nombre(s) del autor" name="nombreA">
                         </div>
 
-                        <button class="btn btn-success rounded-pill">Guardar <i class="fa fa-save"> </i></button>
+                        <button type="submit" class="btn btn-success rounded-pill">Guardar <i class="fa fa-save"> </i></button>
                     </form>
 
                 </div>
