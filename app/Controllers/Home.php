@@ -98,4 +98,15 @@ class Home extends BaseController
         return view('admin/libro/edit');
     }
 
+    //ADMINISTRADOR --> USUARIOS
+    public function adminlistarusuario()
+    {
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
+        return view('admin/usuario/listar', $datos);
+    }
+
+
 }

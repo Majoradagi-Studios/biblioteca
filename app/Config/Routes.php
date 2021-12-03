@@ -58,6 +58,8 @@ $routes->get('/admin/libro/listar', 'Home::adminlistarlibro');
 $routes->get('/admin/libro/create', 'Home::admincrearlibro');
 $routes->get('/admin/libro/edit', 'Home::admineditarlibro');
 
+$routes->get('/admin/usuario/listar', 'Home::adminlistarusuario');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
