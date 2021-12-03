@@ -13,7 +13,7 @@
       type="image/png"
       sizes="16x16"
       href="../../images/favicon/favicon.ico"
-    />
+    /> 
     <!-- Custom CSS -->
     <link href="../../backend/dist/css/style.min.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

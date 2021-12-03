@@ -423,3 +423,14 @@ CRITICAL - 2021-12-02 17:18:02 --> Undefined variable $header
 #7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2021-12-02 20:17:45 --> Undefined variable $categorias
+#0 C:\xampp\htdocs\biblioteca\app\Views\admin\categoria\listar.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 307)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/categoria...', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\CategoriasController.php(18): view('admin/categoria...')
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\CategoriasController->adminlistarcategoria()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
