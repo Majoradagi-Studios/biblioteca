@@ -11,7 +11,11 @@ class Home extends BaseController
 
     public function admin()
     {
-        return view('admin/panel');
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
+        return view('admin/panel',$datos);
     }
 
     //ADMINISTRADOR --> CATEGORIAS

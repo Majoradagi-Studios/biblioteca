@@ -39,3 +39,61 @@ CRITICAL - 2021-12-02 12:39:32 --> Invalid file: admin/libro/listar.php
 #5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2021-12-02 16:12:01 --> Invalid file: template/header.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/header...')
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(230): CodeIgniter\View\View->render('template/header', Array, true)
+#2 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/panel', Array, true)
+#3 C:\xampp\htdocs\biblioteca\app\Controllers\Home.php(18): view('admin/panel')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\Home->admin()
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-02 16:16:22 --> Invalid file: template/header.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/header...')
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(432): CodeIgniter\View\View->render('template/header', NULL, true)
+#2 C:\xampp\htdocs\biblioteca\app\Views\admin\panel.php(1): CodeIgniter\View\View->include('template/header')
+#3 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/panel', Array, true)
+#6 C:\xampp\htdocs\biblioteca\app\Controllers\Home.php(18): view('admin/panel')
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\Home->admin()
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-02 16:16:36 --> Invalid file: template/header.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/header...')
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(432): CodeIgniter\View\View->render('template/header', NULL, true)
+#2 C:\xampp\htdocs\biblioteca\app\Views\admin\panel.php(1): CodeIgniter\View\View->include('template/header')
+#3 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/panel', Array, true)
+#6 C:\xampp\htdocs\biblioteca\app\Controllers\Home.php(18): view('admin/panel')
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\Home->admin()
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-02 17:41:20 --> Invalid file: template/header.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/header...')
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(432): CodeIgniter\View\View->render('template/header', NULL, true)
+#2 C:\xampp\htdocs\biblioteca\app\Views\admin\panel.php(1): CodeIgniter\View\View->include('template/header')
+#3 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/panel', Array, true)
+#6 C:\xampp\htdocs\biblioteca\app\Controllers\Home.php(18): view('admin/panel')
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\Home->admin()
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-02 19:24:23 --> Invalid file: admin/libro/listar.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/libro/lis...')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/libro/lis...', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\Home.php(88): view('admin/libro/lis...')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\Home->adminlistarlibro()
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
