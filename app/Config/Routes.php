@@ -39,9 +39,9 @@ $routes->get('/login', 'Home::login');
 $routes->get('/admin', 'Home::admin', ['filter' => 'authGuard']);
 
 //Categorias
-$routes->get('/admin/categoria/listar', 'CategoriasController::index');
+$routes->get('/admin/categoria/listar', 'CategoriasController::adminlistarcategoria'); 
 $routes->get('/admin/categoria/create', 'CategoriasController::admincrearcategoria');
-$routes->get('/admin/categoria/guardar', 'CategoriasController::guardar');
+$routes->post('/admin/categoria/guardar', 'CategoriasController::guardar');
 $routes->get('/admin/categoria/edit', 'CategoriasController::admineditarcategoria');
 
 $routes->get('/admin/autor/listar', 'AutoresController::listarAutor');

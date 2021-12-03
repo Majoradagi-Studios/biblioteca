@@ -308,6 +308,8 @@
                             <tr>
                               <td class="text-center"> <?=$categoria['idCategoria'];?> </td>
                               <td class="text-center"> <?=$categoria['codigoD'];?> </td>
+                              <td class="text-center"> <?=$categoria['nombreC'];?> </td>
+                              <td class="text-center"> <?=$categoria['descripcion'];?> </td>
                                     <td class="center">
                                         <div class="btn-group" role="group" aria-label="Second group">
                                             <a href="<?=base_url('admin/editorial/edit')?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>

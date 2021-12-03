@@ -297,16 +297,16 @@
                   <form method="post" action="<?=base_url('admin/categoria/guardar')?>" enctype="multipart/form-data">
 
                       <div class="form-group">
-                        <label for="codigoD">Codigo Dewey</label>
+                        <label for="codigo">Codigo Dewey</label>
                         <input id="codigoD" class="form-control" type="text" name="codigoD">
                       </div>
                       <div class="form-group">
-                        <label for="nombreC">Nombre de la Categoria</label>
+                        <label for="nombre">Nombre de la Categoria</label>
                         <input id="nombreC" class="form-control" type="text" name="nombreC">
                       </div>
                       
                       <div class="form-group">
-                        <label for="descripcion">Descripcion de la Categoria</label>
+                        <label for="desc">Descripcion de la Categoria</label>
                         <input id="descripcion" class="form-control" type="text" name="descripcion">
                       </div>
                       <button class="btn btn-success rounded-pill" type="submit">Guardar <i class="fa fa-save"></i></button>
