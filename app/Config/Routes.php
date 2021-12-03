@@ -43,6 +43,7 @@ $routes->get('/admin/categoria/listar', 'CategoriasController::adminlistarcatego
 $routes->get('/admin/categoria/create', 'CategoriasController::admincrearcategoria');
 $routes->post('/admin/categoria/guardar', 'CategoriasController::guardar');
 $routes->get('/admin/categoria/edit', 'CategoriasController::admineditarcategoria');
+$routes->get('borrar/(:num)', 'CategoriasController::borrar/$1');
 
 $routes->get('/admin/autor/listar', 'AutoresController::listarAutor');
 $routes->get('/admin/autor/create', 'AutoresController::crearAutor');

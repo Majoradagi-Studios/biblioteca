@@ -40,7 +40,15 @@ class CategoriasController extends Controller{
         $categoria->save($datos);
 
         return redirect()->to('admin/categoria/listar');
- 
-    
     }
+
+    public function borrar($idCategoria=null){
+        $categoria = new categorias();
+        $datosCategoria = $categoria->where('idCategoria',$idCategoria)->first();
+        
+        $categoria->where('idCategoria',$idCategoria)->delete($idCategoria);
+
+        return $this->response->redirect(site_url('/admin/categoria/listar'));
+    }
+
 }

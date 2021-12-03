@@ -296,7 +296,7 @@
                   <table class="table">
                         <thead class="thead-dark">
                             <tr>
-                                <th scope="col" class="text-center">#</th>
+                                <th scope="col" class="text-center">ID</th>
                                 <th scope="col" class="text-center">Código Dewey</th>
                                 <th scope="col" class="text-center">Nombre</th>
                                 <th scope="col" class="text-center">Descripción</th>
@@ -313,7 +313,7 @@
                                     <td class="center">
                                         <div class="btn-group" role="group" aria-label="Second group">
                                             <a href="<?=base_url('admin/editorial/edit')?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
-                                            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                            <a href="<?=base_url('borrar/'.$categoria['idCategoria']);?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                             </tr>

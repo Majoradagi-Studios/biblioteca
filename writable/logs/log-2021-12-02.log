@@ -479,3 +479,17 @@ CRITICAL - 2021-12-02 21:34:33 --> syntax error, unexpected single-quoted string
 #5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2021-12-02 22:25:39 --> Undefined variable $idCategoria
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\CategoriasController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\CategoriasController->borrar('2')
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 22:28:35 --> Undefined variable $libro
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\CategoriasController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\CategoriasController->borrar('2')
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
