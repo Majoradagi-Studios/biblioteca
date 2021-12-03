@@ -42,9 +42,10 @@ $routes->get('/admin/categoria/listar', 'Home::adminlistarcategoria');
 $routes->get('/admin/categoria/create', 'Home::admincrearcategoria');
 $routes->get('/admin/categoria/edit', 'Home::admineditarcategoria');
 
-$routes->get('/admin/autor/listar', 'Home::adminlistarautor');
-$routes->get('/admin/autor/create', 'Home::admincrearautor');
-$routes->get('/admin/autor/edit', 'Home::admineditarautor');
+$routes->get('/admin/autor/listar', 'AutoresController::listarAutor');
+$routes->get('/admin/autor/create', 'AutoresController::crearAutor');
+$routes->get('/admin/autor/edit', 'AutoresController::editarAutor');
+$routes->get('/admin/autor/guardar', 'AutoresController::guardar');
 
 $routes->get('/admin/editorial/listar', 'Home::adminlistareditorial');
 $routes->get('/admin/editorial/create', 'Home::admincreareditorial');
@@ -79,4 +80,3 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/signup', 'SignupController::index');
 $routes->get('/catalogo', 'LibrosController::index', ['filter' => 'authGuard']);
-$routes->get('/autores', 'AutoresController::index');
