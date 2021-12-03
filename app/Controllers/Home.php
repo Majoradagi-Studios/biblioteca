@@ -87,17 +87,29 @@ class Home extends BaseController
     //ADMINISTRADOR --> LIBRO
     public function adminlistarlibro()
     {
-        return view('admin/libro/listar');
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
+        return view('admin/libro/listar', $datos);
     }
 
     public function admincrearlibro()
     {
-        return view('admin/libro/create');
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
+        return view('admin/libro/create', $datos);
     }
 
     public function admineditarlibro()
     {
-        return view('admin/libro/edit');
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
+        return view('admin/libro/edit', $datos);
     }
 
     //ADMINISTRADOR --> USUARIOS
@@ -109,6 +121,5 @@ class Home extends BaseController
 
         return view('admin/usuario/listar', $datos);
     }
-
 
 }
