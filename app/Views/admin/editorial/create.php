@@ -291,14 +291,25 @@
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Ingresar Nombre de la Editorial</h5>
+            <h5 class="card-title">Ingresar datos de la Editorial</h5>
             <p class="card-text">
+
+            <!--IMPRIMIR MENSAJE DE VALIDACIÓN-->
+              <?php if (session('msg')):?>                       
+                <div class="alert alert-danger" role="alert">
+
+                  <?= session('msg');                    
+                  ?>
+
+                </div>
+                          
+              <?php endif;?>
 
               <form method="post" action="<?=base_url('admin/editorial/guardar')?>" enctype="multipart/form-data">
 
                 <div class="form-group">
                   <label for="nombre">Nombre</label>
-                  <input id="nombre" class="form-control" type="text" name="nombre">
+                  <input id="nombre" class="form-control" value="<?=old('nombreEd');?>" type="text" name="nombre">
                 </div>
 
                 <button class="btn btn-success rounded-pill" type="submit">Guardar  <i class="fa fa-save"></i></button>

@@ -310,8 +310,8 @@
                               <td class="text-center"> <?=$editorial['nombreEd'];?> </td>
                                     <td class="center">
                                         <div class="btn-group" role="group" aria-label="Second group">
-                                            <a href="<?=base_url('admin/editorial/edit')?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
-                                            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                        <a href="<?=base_url('admin/editorial/edit/'.$editorial['idEditorial']);?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                        <a href="<?=base_url('admin/editorial/borrar/'.$editorial['idEditorial']);?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                             </tr>

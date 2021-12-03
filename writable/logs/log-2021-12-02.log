@@ -1740,3 +1740,200 @@ CRITICAL - 2021-12-02 16:47:06 --> There is no data to insert.
 #6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2021-12-02 17:29:37 --> Undefined constant "App\Controllers\editorial"
+#0 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->borrar('6')
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-02 17:33:37 --> Undefined constant "App\Controllers\editorial"
+#0 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->borrar('6')
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-02 17:36:53 --> Undefined constant "App\Controllers\editorial"
+#0 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->borrar('6')
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-02 18:14:59 --> Unmatched ')'
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/editorial...', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(14): view('admin/editorial...', Array)
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->index()
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 18:37:17 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\xampp\htdocs\biblioteca\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\biblioteca\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 18:37:44 --> syntax error, unexpected identifier "base_url", expecting ";"
+#0 C:\xampp\htdocs\biblioteca\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\biblioteca\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 18:37:46 --> syntax error, unexpected identifier "base_url", expecting ";"
+#0 C:\xampp\htdocs\biblioteca\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\biblioteca\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 18:37:49 --> syntax error, unexpected identifier "base_url", expecting ";"
+#0 C:\xampp\htdocs\biblioteca\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\biblioteca\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 18:50:18 --> Undefined variable $editoriales
+#0 C:\xampp\htdocs\biblioteca\app\Views\admin\editorial\listar.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 307)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/editorial...', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(60): view('admin/editorial...')
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 18:50:19 --> Undefined variable $editoriales
+#0 C:\xampp\htdocs\biblioteca\app\Views\admin\editorial\listar.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 307)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/editorial...', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(60): view('admin/editorial...')
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 18:53:52 --> Undefined variable $editoriales
+#0 C:\xampp\htdocs\biblioteca\app\Views\admin\editorial\listar.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 307)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/editorial...', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(60): view('admin/editorial...')
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 19:00:00 --> Undefined variable $editoriales
+#0 C:\xampp\htdocs\biblioteca\app\Views\admin\editorial\listar.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 307)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/editorial...', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(60): view('admin/editorial...')
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 19:10:03 --> Invalid file: editorial/edit.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editorial/edit....')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('editorial/edit', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(62): view('editorial/edit')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit('3')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 19:10:05 --> Invalid file: editorial/edit.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editorial/edit....')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('editorial/edit', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(62): view('editorial/edit')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit('3')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 19:10:06 --> Invalid file: editorial/edit.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editorial/edit....')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('editorial/edit', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(62): view('editorial/edit')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit('3')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 19:10:06 --> Invalid file: editorial/edit.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editorial/edit....')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('editorial/edit', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(62): view('editorial/edit')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit('3')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 19:10:06 --> Invalid file: editorial/edit.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editorial/edit....')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('editorial/edit', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(62): view('editorial/edit')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit('3')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 19:10:55 --> Invalid file: editorial/edit.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editorial/edit....')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('editorial/edit', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(62): view('editorial/edit')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit('3')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 19:10:56 --> Invalid file: editorial/edit.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editorial/edit....')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('editorial/edit', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(62): view('editorial/edit')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit('3')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 19:10:56 --> Invalid file: editorial/edit.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editorial/edit....')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('editorial/edit', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(62): view('editorial/edit')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit('3')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 19:10:57 --> Invalid file: editorial/edit.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editorial/edit....')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('editorial/edit', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(62): view('editorial/edit')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit('3')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 19:10:57 --> Invalid file: editorial/edit.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editorial/edit....')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('editorial/edit', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\EditorialesController.php(62): view('editorial/edit')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\EditorialesController->edit('3')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

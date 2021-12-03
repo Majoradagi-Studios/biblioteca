@@ -83,5 +83,7 @@ $routes->get('/catalogo', 'LibrosController::index', ['filter' => 'authGuard']);
 //RUTAS EDITORIAL
 $routes->get('admin/editorial/listar', 'EditorialesController::index');
 $routes->get('admin/editorial/create', 'EditorialesController::create');
-$routes->get('admin/editorial/edit', 'EditorialesController::edit');
 $routes->post('admin/editorial/guardar', 'EditorialesController::guardar');
+$routes->get('admin/editorial/borrar/(:num)', 'EditorialesController::borrar/$1');
+$routes->get('admin/editorial/edit/(:num)', 'EditorialesController::edit/$1');
+$routes->post('admin/editorial/actualizar', 'EditorialesController::actualizar');
