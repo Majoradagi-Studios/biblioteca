@@ -52,21 +52,21 @@ class Home extends BaseController
         return view('admin/autor/edit');
     }
 
-    //ADMINISTRADOR --> EDITORIAL
-    public function adminlistareditorial()
-    {
-        return view('admin/editorial/listar');
-    }
-
-    public function admincreareditorial()
-    {
-        return view('admin/editorial/create');
-    }
-
-    public function admineditareditorial()
-    {
-        return view('admin/editorial/edit');
-    }
+    ////ADMINISTRADOR --> EDITORIAL
+    //public function adminlistareditorial()
+    //{
+    //    return view('admin/editorial/listar');
+    //}
+//
+    //public function admincreareditorial()
+    //{
+    //    return view('admin/editorial/create');
+    //}
+//
+    //public function admineditareditorial()
+    //{
+    //    return view('admin/editorial/edit');
+    //}
 
     //ADMINISTRADOR --> EJEMPLAR
     public function adminlistarejemplar()

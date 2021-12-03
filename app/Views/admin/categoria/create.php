@@ -13,7 +13,7 @@
       type="image/png"
       sizes="16x16"
       href="../../images/favicon/favicon.ico"
-    />
+    /> 
     <!-- Custom CSS -->
     <link href="../../backend/dist/css/style.min.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -194,14 +194,14 @@
           <!-- Sidebar navigation-->
           <nav class="sidebar-nav">
             <ul id="sidebarnav" class="pt-4">
-              <li class="sidebar-item">
-                  <a
-                    class="sidebar-link waves-effect waves-dark sidebar-link"
-                    href="<?php echo base_url(); ?>/admin"
-                    aria-expanded="false"
-                    ><i class="mdi mdi-view-dashboard"></i
-                    ><span class="hide-menu">Dashboard</span></a
-                  >
+            <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="<?php echo base_url(); ?>/admin"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-view-dashboard"></i
+                  ><span class="hide-menu">Dashboard</span></a
+                >
               </li>
               <li class="sidebar-item">
                 <a
@@ -271,10 +271,9 @@
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#" class="btn btn-success rounded-pill">Guardar <i class="fa fa-save"> </i></a></li>
                   </ol>
                 </nav>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -288,27 +287,39 @@
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
+<?php if(session('mensaje')){?>
+  <div class="alert alert-danger" role="alert">
+    <?php
+    echo session('mensaje');
+    ?>
+</div>
+<?php
+}
+?>
+
           <div class="row">
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Agregar categoría</h5> <br>
-                  
-                  <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Código Dewey</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Nombre categoría</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Descripción</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                        </div>
-                    </form>
+                  <h5 class="card-title">Agregar una categoría</h5><br>
+                    
+                  <form method="post" action="<?=base_url('admin/categoria/guardar')?>" enctype="multipart/form-data">
 
+                      <div class="form-group">
+                        <label for="codigo">Codigo Dewey</label>
+                        <input id="codigoD" value="<?=old('codigoD')?>" class="form-control" type="text" name="codigoD">
+                      </div>
+                      <div class="form-group">
+                        <label for="nombre">Nombre de la Categoria</label>
+                        <input id="nombreC" value="<?=old('nombreC')?>" class="form-control" type="text" name="nombreC">
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="desc">Descripcion de la Categoria</label>
+                        <input id="descripcion" value="<?=old('descripcion')?>" class="form-control" type="text" name="descripcion">
+                      </div>
+                      <button class="btn btn-success rounded-pill" type="submit">Guardar <i class="fa fa-save"></i></button>
+                  </form>      
                 </div>
               </div>
             </div>

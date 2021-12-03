@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-12-2021 a las 06:10:41
+-- Tiempo de generación: 02-12-2021 a las 23:10:22
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.3
 
@@ -34,6 +34,13 @@ CREATE TABLE `autores` (
   `nombreA` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `autores`
+--
+
+INSERT INTO `autores` (`idAutor`, `apellidoA`, `nombreA`) VALUES
+(1, 'Caese', 'Dam');
+
 -- --------------------------------------------------------
 
 --
@@ -47,6 +54,13 @@ CREATE TABLE `categorias` (
   `descripcion` varchar(150) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `categorias`
+--
+
+INSERT INTO `categorias` (`idCategoria`, `codigoD`, `nombreC`, `descripcion`) VALUES
+(1, 77, 'Terror', 'Terror terror y mas terror');
+
 -- --------------------------------------------------------
 
 --
@@ -58,6 +72,13 @@ CREATE TABLE `editoriales` (
   `nombreEd` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `editoriales`
+--
+
+INSERT INTO `editoriales` (`idEditorial`, `nombreEd`) VALUES
+(2, 'La chida');
+
 -- --------------------------------------------------------
 
 --
@@ -68,8 +89,15 @@ CREATE TABLE `ejemplares` (
   `idEjemplar` int(11) NOT NULL,
   `ejemplar` int(11) DEFAULT NULL,
   `estado` varchar(15) DEFAULT NULL,
-  `idLibro` int(11) DEFAULT NULL
+  `idLibro` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `ejemplares`
+--
+
+INSERT INTO `ejemplares` (`idEjemplar`, `ejemplar`, `estado`, `idLibro`) VALUES
+(1, 1, 'Disponible', 1);
 
 -- --------------------------------------------------------
 
@@ -88,6 +116,13 @@ CREATE TABLE `libros` (
   `idEditorial` int(11) DEFAULT NULL,
   `idCategoria` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `libros`
+--
+
+INSERT INTO `libros` (`idLibro`, `titulo`, `lugarEd`, `anioPub`, `numPaginas`, `numEdicion`, `idAutor`, `idEditorial`, `idCategoria`) VALUES
+(1, 'Anita', 'Mexico', '2021', 150, 1, 1, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -137,13 +172,17 @@ ALTER TABLE `editoriales`
 -- Indices de la tabla `ejemplares`
 --
 ALTER TABLE `ejemplares`
-  ADD PRIMARY KEY (`idEjemplar`);
+  ADD PRIMARY KEY (`idEjemplar`),
+  ADD KEY `idLibro` (`idLibro`);
 
 --
 -- Indices de la tabla `libros`
 --
 ALTER TABLE `libros`
-  ADD PRIMARY KEY (`idLibro`);
+  ADD PRIMARY KEY (`idLibro`),
+  ADD KEY `idAutor` (`idAutor`),
+  ADD KEY `idEditorial` (`idEditorial`),
+  ADD KEY `idCategoria` (`idCategoria`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -159,37 +198,55 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `autores`
 --
 ALTER TABLE `autores`
-  MODIFY `idAutor` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idAutor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `idCategoria` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idCategoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `editoriales`
 --
 ALTER TABLE `editoriales`
-  MODIFY `idEditorial` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idEditorial` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `ejemplares`
 --
 ALTER TABLE `ejemplares`
-  MODIFY `idEjemplar` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idEjemplar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `libros`
 --
 ALTER TABLE `libros`
-  MODIFY `idLibro` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idLibro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `ejemplares`
+--
+ALTER TABLE `ejemplares`
+  ADD CONSTRAINT `ejemplares_ibfk_1` FOREIGN KEY (`idLibro`) REFERENCES `libros` (`idLibro`) ON DELETE CASCADE;
+
+--
+-- Filtros para la tabla `libros`
+--
+ALTER TABLE `libros`
+  ADD CONSTRAINT `libros_ibfk_1` FOREIGN KEY (`idAutor`) REFERENCES `autores` (`idAutor`),
+  ADD CONSTRAINT `libros_ibfk_2` FOREIGN KEY (`idEditorial`) REFERENCES `editoriales` (`idEditorial`),
+  ADD CONSTRAINT `libros_ibfk_3` FOREIGN KEY (`idCategoria`) REFERENCES `categorias` (`idCategoria`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
