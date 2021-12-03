@@ -6,7 +6,9 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('inicio');
+        $datos['header'] = view('site/template/header');
+        $datos['footer'] = view('site/template/footer');
+        return view('inicio', $datos);
     }
 
     public function admin()

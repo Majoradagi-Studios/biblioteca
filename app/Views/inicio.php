@@ -1,16 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Biblioteca CBTis-147</title>
-	<meta name="description" content="The small framework with powerful features">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/png" href="images/favicon/favicon.ico"/>
+<?=$header;?>
 
-</head>
-<body>
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
 
-Estas dentro del inicio
+					<!-- section title -->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Catálogo de libros</h3>
+						</div>
+					</div>
+					<!-- /section title -->
 
-</body>
-</html>
+					<!-- card -->
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/Libro.png" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Ejemplo de libro</h3>
+								<a href="#" class="cta-btn">Detalles <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- /card -->
+
+					<!-- shop -->
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/Libro.png" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Ejemplo de libro</h3>
+								<a href="#" class="cta-btn">Detalles <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- /shop -->
+
+					<!-- shop -->
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/Libro.png" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Ejemplo de libro</h3>
+								<a href="#" class="cta-btn">Detalles <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- /shop -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+<?=$footer;?>
