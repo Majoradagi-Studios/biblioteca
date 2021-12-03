@@ -2,12 +2,12 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\Categoria;
+use App\Models\Categorias;
 class CategoriasController extends Controller{
 
     public function index()
     {
-        $categoria =  new Categoria();
+        $categoria =  new Categorias();
         $datos['categorias']= $categoria->orderBy('idCategoria', 'ASC')->findAll();
 
         return view('/admin/categoria/listar',$datos);

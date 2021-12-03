@@ -434,3 +434,32 @@ CRITICAL - 2021-12-02 20:17:45 --> Undefined variable $categorias
 #7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2021-12-02 20:21:21 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\biblioteca\app\Views\admin\categoria\listar.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 307, Array)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/categoria...', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\CategoriasController.php(18): view('admin/categoria...')
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\CategoriasController->adminlistarcategoria()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 20:24:26 --> Class 'App\Models\Categoria' not found
+#0 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\CategoriasController->index()
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-02 20:24:38 --> Class 'App\Controllers\Categoria' not found
+#0 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\CategoriasController->index()
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-02 20:24:46 --> Class 'App\Models\Categorias' not found
+#0 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\CategoriasController->index()
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
