@@ -6,12 +6,18 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('inicio');
+        $datos['header'] = view('site/template/header');
+        $datos['footer'] = view('site/template/footer');
+        return view('inicio', $datos);
     }
 
     public function admin()
     {
-        return view('admin/panel');
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
+        return view('admin/panel',$datos);
     }
 
     //ADMINISTRADOR --> CATEGORIAS
@@ -93,5 +99,16 @@ class Home extends BaseController
     {
         return view('admin/libro/edit');
     }
+
+    //ADMINISTRADOR --> USUARIOS
+    public function adminlistarusuario()
+    {
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
+        return view('admin/usuario/listar', $datos);
+    }
+
 
 }
