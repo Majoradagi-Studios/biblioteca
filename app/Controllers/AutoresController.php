@@ -15,9 +15,6 @@ class  AutoresController extends Controller{
     }
     
     public function crearAutor(){
-        //$autor = new Autor();
-        //$datos['autores']=$autor->orderBy('idAutor','ASC')->findAll();
-
         $datos['header'] = view('admin/templates/header');
         $datos['footer'] = view('admin/templates/footer');
         
@@ -89,7 +86,6 @@ class  AutoresController extends Controller{
             $session = session();
             $session->setFlashdata('mensaje', 'Verificar que tanto el nombre como el apellido tengan como mínimo 2 carácteres');
             return redirect()->back()->withInput();
-            // return $this->response->redirect(site_url('/admin/autor/listar'));
         }else{
             $autor->update($idAutor,$datos);
         } 
