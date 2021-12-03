@@ -31,6 +31,19 @@ class CategoriasController extends Controller{
 
         $categoria = new categorias();
 
+        $validacion = $this->validate([
+            'codigoD'=>'required|min_length[4]',
+            'nombreC'=>'required|min_length[6]',
+            'descripcion'=>'required|min_length[6]',
+        ]);
+        if(!$validacion){
+            $sessions = session();
+            $sessions->setFlashData('mensaje', 'Faltan datos por agregar');
+
+            return redirect()->back()->withInput();
+            //return $this->response->redirect(site_url('/admin/categoria/listar'));
+        }
+
         $datos = [
             'codigoD'=>$this->request->getVar('codigoD'),
             'nombreC'=>$this->request->getVar('nombreC'),
@@ -40,6 +53,42 @@ class CategoriasController extends Controller{
         $categoria->save($datos);
 
         return redirect()->to('admin/categoria/listar');
+    }
+
+    public function editar($idCategoria){
+        $categoria = new categorias();
+        $datos ['categoria'] =$categoria->where('idCategoria', $idCategoria)->first();
+
+
+        return view('/admin/categoria/edit', $datos);
+    }
+
+    public function actualizar(){
+        $categoria = new categorias();
+        $datos = [
+            'codigoD'=>$this->request->getVar('codigoD'),
+            'nombreC'=>$this->request->getVar('nombreC'),
+            'descripcion'=>$this->request->getVar('descripcion')
+        ];
+
+        $idCategoria = $this->request->getVar('idCategoria');
+
+        $validacion = $this->validate([
+            'codigoD'=>'required|min_length[4]',
+            'nombreC'=>'required|min_length[6]',
+            'descripcion'=>'required|min_length[6]',
+        ]);
+        if(!$validacion){
+            $sessions = session();
+            $sessions->setFlashData('mensaje', 'Faltan datos por agregar');
+
+            return redirect()->back()->withInput();
+            //return $this->response->redirect(site_url('/admin/categoria/listar'));
+        }
+
+        $categoria->update($idCategoria, $datos);
+
+        return $this->response->redirect(site_url('/admin/categoria/listar'));
     }
 
     public function borrar($idCategoria=null){

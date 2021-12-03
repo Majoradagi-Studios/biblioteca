@@ -271,7 +271,6 @@
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <!--li class="breadcrumb-item"><a href="" class="btn btn-success rounded-pill" type="submit">Guardar <i class="fa fa-save"></i></a></li>-->
                   </ol>
                 </nav>
               </div> 
@@ -288,6 +287,16 @@
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
+<?php if(session('mensaje')){?>
+  <div class="alert alert-danger" role="alert">
+    <?php
+    echo session('mensaje');
+    ?>
+</div>
+<?php
+}
+?>
+
           <div class="row">
             <div class="col-12">
               <div class="card">
@@ -298,16 +307,16 @@
 
                       <div class="form-group">
                         <label for="codigo">Codigo Dewey</label>
-                        <input id="codigoD" class="form-control" type="text" name="codigoD">
+                        <input id="codigoD" value="<?=old('codigoD')?>" class="form-control" type="text" name="codigoD">
                       </div>
                       <div class="form-group">
                         <label for="nombre">Nombre de la Categoria</label>
-                        <input id="nombreC" class="form-control" type="text" name="nombreC">
+                        <input id="nombreC" value="<?=old('nombreC')?>" class="form-control" type="text" name="nombreC">
                       </div>
                       
                       <div class="form-group">
                         <label for="desc">Descripcion de la Categoria</label>
-                        <input id="descripcion" class="form-control" type="text" name="descripcion">
+                        <input id="descripcion" value="<?=old('descripcion')?>" class="form-control" type="text" name="descripcion">
                       </div>
                       <button class="btn btn-success rounded-pill" type="submit">Guardar <i class="fa fa-save"></i></button>
                   </form>      

@@ -302,7 +302,7 @@
                                 <th scope="col" class="text-center">Descripción</th>
                                 <th class="center text-danger"><i class="fa fa-bolt"> </i></th>
                             </tr>
-                        </thead> 
+                        </thead>
                         <tbody>
                           <?php foreach($categorias as $categoria): ?>
                             <tr>
@@ -312,8 +312,8 @@
                               <td class="text-center"> <?=$categoria['descripcion'];?> </td>
                                     <td class="center">
                                         <div class="btn-group" role="group" aria-label="Second group">
-                                            <a href="<?=base_url('admin/editorial/edit')?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
-                                            <a href="<?=base_url('borrar/'.$categoria['idCategoria']);?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                            <a href="<?=base_url('admin/categoria/edit/' .$categoria['idCategoria']);?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                            <a href="<?=base_url('borrar/'.$categoria['idCategoria']); ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                             </tr>
