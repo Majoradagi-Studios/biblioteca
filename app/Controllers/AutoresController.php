@@ -35,7 +35,7 @@ class  AutoresController extends Controller{
 
     public function eliminarAutor($id=null){
         
-        // $autor = new Autor();
+        $autor = new Autor();
         //$datosAutor = $autor->where('idAutor',$id)->first();
 
         $autor->where('idAutor',$id)->delete($id);
@@ -44,9 +44,7 @@ class  AutoresController extends Controller{
     }
 
     public function editarAutor($id=null){
-        // $autor = new Autor();
 
-        // print_r($id);
         $autor = new Autor();
         $datos['autor']=$autor->where('idAutor',$id)->first();
         $datos['header'] = view('admin/templates/header_edit');
@@ -64,8 +62,9 @@ class  AutoresController extends Controller{
             'nombreA'=>$this->request->getVar('nombreA'),
             'apellidoA'=>$this->request->getVar('apellidoA')  
         ];
-        $id = $this->request->getVar('idAutor');
-        $autor->update($id,$datos);
+        $idAutor = $this->request->getVar('id');
+        $autor->update($idAutor,$datos);
+        return $this->response->redirect(site_url('/admin/autor/listar'));
     }
 
 }

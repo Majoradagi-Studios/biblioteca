@@ -14,7 +14,7 @@ print_r($autor);
         <div class="page-breadcrumb">
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-              <h4 class="page-title"> <i class="fa fa-users"></i> Autores</h4>
+              <h4 class="page-title"> <i class="fa fa-users"></i> <?=$autor['nombreA'].' '.$autor['apellidoA'];?> </h4>
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
@@ -41,7 +41,7 @@ print_r($autor);
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title"> <i class="fa fa-user"></i> Agregar autor</h5> <br>
+                  <h5 class="card-title"> <i class="fa fa-user"></i> Editar autor </h5> <br>
                   
                   <form method="post" action="<?=site_url('/admin/autor/actualizar');?>" enctype"multipart/form-data">
                         <input type="text" name="id" value="<?=$autor['idAutor'];?>">
@@ -54,7 +54,7 @@ print_r($autor);
                             <input type="text" class="form-control" id="nombreA" placeholder="Nombre(s) del autor" name="nombreA">
                         </div>
 
-                        <button type="submit" class="btn btn-success rounded-pill">actualizar <i class="fa fa-save"> </i></button>
+                        <button type="submit" class="btn btn-success rounded-pill">Actualizar <i class="fa fa-save"> </i></button>
                     </form>
 
                 </div>

@@ -1,0 +1,14 @@
+CRITICAL - 2021-12-03 00:01:56 --> Undefined variable $autor
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->eliminarAutor('5')
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-03 00:14:24 --> Undefined variable $id
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->actualizarAutor()
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
