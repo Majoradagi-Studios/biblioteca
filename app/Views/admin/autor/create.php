@@ -39,11 +39,11 @@
                   <form method="post" action="<?=site_url('/admin/autor/guardar');?>" enctype"multipart/form-data">
                         <div class="form-group">
                             <label for="apellidoA">Apellido</label>
-                            <input type="text" class="form-control" id="apellidoA" placeholder="Apellido(s) del autor">
+                            <input type="text" class="form-control" id="apellidoA" placeholder="Apellido(s) del autor" name="apellidoA">
                         </div>
                         <div class="form-group">
                             <label for="nombreA">Nombre</label>
-                            <input type="text" class="form-control" id="nombreA" placeholder="Nombre(s) del autor">
+                            <input type="text" class="form-control" id="nombreA" placeholder="Nombre(s) del autor" name="nombreA">
                         </div>
 
                         <button class="btn btn-success rounded-pill">Guardar <i class="fa fa-save"> </i></button>

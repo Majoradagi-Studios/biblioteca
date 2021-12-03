@@ -23,7 +23,9 @@ class  AutoresController extends Controller{
         return view('admin/autor/create',$datos);
     }
 
-    public function guardar(){
-        return view('/admin/autor/listar');
+    public function guardarAutor(){  
+        this->requiest->getVar('nombreA');
+        print_r($nombreA);
+        return redirect()->to('/admin/autor/listar');
     }
 }
