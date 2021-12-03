@@ -20,6 +20,7 @@ class  AutoresController extends Controller{
 
         $datos['header'] = view('admin/templates/header');
         $datos['footer'] = view('admin/templates/footer');
+        
         return view('admin/autor/create',$datos);
     }
 
@@ -29,6 +30,19 @@ class  AutoresController extends Controller{
             'nombreA'=>$this->request->getVar('nombreA'),
             'apellidoA'=>$this->request->getVar('apellidoA')  
         ];
+
+        $validacion = $this->validate([
+            'nombreA' =>  'required|min_length[2]|',
+            'apellidoA' =>  'required|min_length[2]|'
+        ]);
+
+        if(!$validacion){
+            $session = session();
+            $session->setFlashdata('mensaje', 'Verificar que tanto el nombre como el apellido tengan como mínimo 2 carácteres');
+            return redirect()->back()->withInput();
+            // return $this->response->redirect(site_url('/admin/autor/listar'));
+        }    
+
         $autor->insert($datos);
         return $this->response->redirect(site_url('/admin/autor/listar'));
     }
@@ -62,8 +76,24 @@ class  AutoresController extends Controller{
             'nombreA'=>$this->request->getVar('nombreA'),
             'apellidoA'=>$this->request->getVar('apellidoA')  
         ];
+        
         $idAutor = $this->request->getVar('id');
-        $autor->update($idAutor,$datos);
+
+        $validacion = $this->validate([
+            'nombreA' =>  'required|min_length[2]|',
+            'apellidoA' =>  'required|min_length[2]|'
+
+        ]);
+
+        if(!$validacion){
+            $session = session();
+            $session->setFlashdata('mensaje', 'Verificar que tanto el nombre como el apellido tengan como mínimo 2 carácteres');
+            return redirect()->back()->withInput();
+            // return $this->response->redirect(site_url('/admin/autor/listar'));
+        }else{
+            $autor->update($idAutor,$datos);
+        } 
+
         return $this->response->redirect(site_url('/admin/autor/listar'));
     }
 

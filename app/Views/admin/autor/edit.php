@@ -1,9 +1,10 @@
 
 <?=$header;?>
 
-<?php
+<!-- <?php
 print_r($autor);
-?>
+?> -->
+
  <!-- ============================================================== -->
       <!-- Page wrapper  -->
       <!-- ============================================================== -->
@@ -35,7 +36,15 @@ print_r($autor);
           <!-- ============================================================== -->
           <!-- Start Page Content -->
 
-
+          <?php if (session('mensaje')){?>
+          <div class="alert alert-danger" role="alert">
+            <?php
+            echo session('mensaje');
+            ?>
+          </div>
+          <?php
+            }
+          ;?>
           <!-- ============================================================== -->
           <div class="row">
             <div class="col-12">
@@ -44,14 +53,14 @@ print_r($autor);
                   <h5 class="card-title"> <i class="fa fa-user"></i> Editar autor </h5> <br>
                   
                   <form method="post" action="<?=site_url('/admin/autor/actualizar');?>" enctype"multipart/form-data">
-                        <input type="text" name="id" value="<?=$autor['idAutor'];?>">
+                        <input type="hidden" name="id" value="<?=$autor['idAutor'];?>">
                         <div class="form-group">
                             <label for="apellidoA">Apellido</label>
-                            <input type="text" class="form-control" id="apellidoA" placeholder="Apellido(s) del autor" name="apellidoA">
+                            <input value="<?=old('apellidoA');?>" type="text" class="form-control" id="apellidoA" placeholder="Apellido(s) del autor" name="apellidoA">
                         </div>
                         <div class="form-group">
                             <label for="nombreA">Nombre</label>
-                            <input type="text" class="form-control" id="nombreA" placeholder="Nombre(s) del autor" name="nombreA">
+                            <input value="<?=old('nombreA');?>" type="text" class="form-control" id="nombreA" placeholder="Nombre(s) del autor" name="nombreA">
                         </div>
 
                         <button type="submit" class="btn btn-success rounded-pill">Actualizar <i class="fa fa-save"> </i></button>
