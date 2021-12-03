@@ -501,3 +501,78 @@ CRITICAL - 2021-12-02 21:34:02 --> Call to a member function getFirstRow() on bo
 #4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2021-12-02 22:13:59 --> Invalid file: admin/autor/editar.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/autor/edi...')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/autor/edi...', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(49): view('admin/autor/edi...')
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->editarAutor()
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 22:19:01 --> Invalid file: admin/autor/editar.php
+#0 C:\xampp\htdocs\biblioteca\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/autor/edi...')
+#1 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/autor/edi...', Array, true)
+#2 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(50): view('admin/autor/edi...', Array)
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->editarAutor()
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 22:37:01 --> Undefined variable $header
+#0 C:\xampp\htdocs\biblioteca\app\Views\admin\autor\edit.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/autor/edi...', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(50): view('admin/autor/edi...')
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->editarAutor('4')
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 22:37:33 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 50)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->editarAutor('4')
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 22:37:56 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 50)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->editarAutor('5')
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 22:38:02 --> Undefined variable $datos
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 50)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->editarAutor('5')
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 23:10:27 --> Undefined variable $id
+#0 C:\xampp\htdocs\biblioteca\app\Views\admin\autor\edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\biblioteca\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\biblioteca\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\biblioteca\system\Common.php(1097): CodeIgniter\View\View->render('admin/autor/edi...', Array, true)
+#4 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(56): view('admin/autor/edi...', Array)
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->editarAutor('5')
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 23:40:30 --> Undefined variable $autor
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->eliminarAutor('5')
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-02 23:42:35 --> Undefined variable $autor
+#0 C:\xampp\htdocs\biblioteca\app\Controllers\AutoresController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\AutoresController->eliminarAutor('5')
+#2 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+#3 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -47,6 +47,8 @@ $routes->get('/admin/autor/create', 'AutoresController::crearAutor');
 $routes->get('/admin/autor/edit', 'AutoresController::editarAutor');
 $routes->post('/admin/autor/guardar', 'AutoresController::guardarAutor');
 $routes->get('/admin/autor/eliminar/(:num)', 'AutoresController::eliminarAutor/$1');
+$routes->get('/admin/autor/editar/(:num)', 'AutoresController::editarAutor/$1');
+$routes->post('/admin/autor/actualizar', 'AutoresController::actualizarAutor');
 
 $routes->get('/admin/editorial/listar', 'Home::adminlistareditorial');
 $routes->get('/admin/editorial/create', 'Home::admincreareditorial');
