@@ -25,25 +25,19 @@
                 <div class="card-body">
                   <h5 class="card-title">Agregar ejemplar</h5> <br>
                   
-                  <form>
+                  <form action="<?= base_url('/admin/ejemplar/guardar')?>" method="post">
                         <div class="form-group">
-                            <label for="exampleFormControlInput1">Número de ejemplares</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <label for="exampleFormControlInput1">Número del ejemplar</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" name="ejemplar">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Estado</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione una opción</option>
-                                <option value="1">Disponible</option>
-                                <option value="2">Ocupado</option>
-                            </select>
-                        </div>
+                        
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Libro</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example" name="idLibro">
                                 <option selected>Seleccione una opción</option>
-                                <option value="1">Libro 1</option>
-                                <option value="2">Libro 2</option>
+                                <?php foreach($libros as $libro): ?>
+                                <option value="<?= $libro['idLibro'];?>"><?= $libro['titulo'];?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-success rounded-pill">Guardar <i class="fa fa-save"> </i></button>
