@@ -7,7 +7,14 @@
 
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-              <h2 class="page-title">Libros</h2>
+              <h2 class="page-title"> <i class="fa fa-book"></i> Libros</h2>
+              <div class="ms-auto text-end">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="<?=base_url('/admin/autor/listar');?>" class="btn btn-warning rounded-pill">Regresar <i class="fa fa-undo"> </i></a></li>
+                  </ol>
+                </nav>
+              </div>
             </div>
           </div>
 
@@ -15,7 +22,7 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Agregar libro</h5> <br>
+                  <h5 class="card-title"> <i class="fa fa-book"></i> Agregar libro</h5> <br>
                   
                   <form>
                         <div class="form-group">

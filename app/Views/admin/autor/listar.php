@@ -1,15 +1,13 @@
 <?=$header;?>
-      <!-- ============================================================== -->
-      <!-- Page wrapper  -->
-      <!-- ============================================================== -->
-      <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <div class="page-breadcrumb">
+<?=$sidebar;?>
+
+          <!-- ============================================================== -->
+          <!-- Start Page Content -->
+          <!-- ============================================================== -->
+
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-              <h4 class="page-title">Autores</h4>
+              <h2 class="page-title"> <i class="fa fa-users"></i> Autores</h2>
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
@@ -19,22 +17,12 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Container fluid  -->
-        <!-- ============================================================== -->
-        <div class="container-fluid">
-          <!-- ============================================================== -->
-          <!-- Start Page Content -->
-          <!-- ============================================================== -->
+
           <div class="row">
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Autor</h5>
+                  <h5 class="card-title"> <i class="fa fa-user"></i> Autor</h5>
                   <table class="table">
                         <thead class="thead-dark">
                             <tr>

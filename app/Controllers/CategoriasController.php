@@ -9,6 +9,9 @@ class CategoriasController extends Controller{
     {
         $categoria =  new Categorias();
         $datos['categorias']= $categoria->orderBy('idCategoria', 'ASC')->findAll();
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
 
         return view('/admin/categoria/listar',$datos);
     }
@@ -17,14 +20,20 @@ class CategoriasController extends Controller{
     {
         $categoria =  new Categorias();
         $datos['categorias']= $categoria->orderBy('idCategoria', 'ASC')->findAll();
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
 
         return view('/admin/categoria/listar',$datos);
     }
 
     public function admincrearcategoria()
     {
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
 
-        return view('admin/categoria/create');
+        return view('admin/categoria/create', $datos);
     }
 
     public function guardar(){

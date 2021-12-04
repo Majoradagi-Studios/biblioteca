@@ -248,6 +248,15 @@
                     ><span class="hide-menu">Libro</span></a
                     >
                 </li>
+                <li class="sidebar-item">
+                    <a
+                        class="sidebar-link waves-effect waves-dark sidebar-link"
+                        href="<?php echo base_url(); ?>/admin/usuario/listar"
+                        aria-expanded="false"
+                        ><i class="mdi mdi-account-circle"></i
+                        ><span class="hide-menu">Usuarios</span></a
+                    >
+                </li>
                 </ul>
             </nav>
             <!-- End Sidebar navigation -->
