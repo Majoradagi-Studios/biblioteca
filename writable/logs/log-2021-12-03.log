@@ -441,3 +441,33 @@ CRITICAL - 2021-12-03 19:21:03 --> Invalid argument supplied for foreach()
 #7 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2021-12-03 20:17:17 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+#0 C:\xampp\htdocs\biblioteca\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\biblioteca\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-03 20:20:02 --> There is no data to update.
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\biblioteca\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\xampp\htdocs\biblioteca\system\Model.php(646): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\xampp\htdocs\biblioteca\app\Controllers\LibrosController.php(124): CodeIgniter\Model->update(Array)
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\LibrosController->adminactualizarlibro()
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-03 20:30:33 --> There is no data to update.
+#0 C:\xampp\htdocs\biblioteca\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\biblioteca\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\xampp\htdocs\biblioteca\system\Model.php(646): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\xampp\htdocs\biblioteca\app\Controllers\LibrosController.php(124): CodeIgniter\Model->update(Array)
+#4 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(824): App\Controllers\LibrosController->adminactualizarlibro()
+#5 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+#6 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\biblioteca\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

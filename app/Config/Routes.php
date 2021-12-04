@@ -69,6 +69,7 @@ $routes->get('/admin/libro/create', 'LibrosController::admincrearlibro');
 $routes->post('/admin/libro/guardar', 'LibrosController::adminguardarlibro');
 $routes->get('admin/libro/borrar/(:num)', 'LibrosController::adminborrarlibro/$1');
 $routes->get('/admin/libro/editar/(:num)', 'LibrosController::admineditarlibro/$1');
+$routes->post('/admin/libro/actualizar', 'LibrosController::adminactualizarlibro');
 
 //Ejemplar
 $routes->get('/admin/ejemplar/listar', 'Home::adminlistarejemplar');

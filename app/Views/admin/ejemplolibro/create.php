@@ -6,7 +6,7 @@
     <title>Creación de libro</title>
 </head>
 <body>
-    <form action="<?= base_url('/admin/libro/guardar')?>" method="post">
+    <form action="<?= base_url('/admin/libro/guardar')?>" method="post" enctype="multipart/form-data">
     <input type="text" placeholder="titulo" name="titulo"><br>
     <input type="text" placeholder="lugarEd" name="lugarEd"><br>
     <input type="text" placeholder="anioPub" name="anioPub"><br>
@@ -30,10 +30,9 @@
         <option value="<?= $categoria['idCategoria'];?>"><?= $categoria['codigoD']." ".$categoria['nombreC'];?></option>
         <?php endforeach; ?>
     </select><br>
-    <!--<input type="text" placeholder="idAutor" name="idAutor"><br>
-    <input type="text" placeholder="idEditorial" name="idEditorial"><br>
-    <input type="text" placeholder="idCategoria" name="idCategoria"><br>-->
-    <input type="text" placeholder="imagen" name="imagen"><br>
+
+    <input id="imagen" type="file" name="imagen"><br>
+
     <input type="submit" value="Enviar">
     </form>
 </body>

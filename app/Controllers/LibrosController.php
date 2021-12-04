@@ -49,24 +49,38 @@ class LibrosController extends Controller{
     public function adminguardarlibro()
     {
         $libros = new Libros();
-        $datos=[
-            'titulo'=>$this->request->getVar('titulo'),
-            'lugarEd'=>$this->request->getVar('lugarEd'),
-            'anioPub'=>$this->request->getVar('anioPub'),
-            'numPaginas'=>$this->request->getVar('numPaginas'),
-            'numEdicion'=>$this->request->getVar('numEdicion'),
-            'idAutor'=>$this->request->getVar('idAutor'),
-            'idEditorial'=>$this->request->getVar('idEditorial'),
-            'idCategoria'=>$this->request->getVar('idCategoria'),
-            'imagen'=>$this->request->getVar('imagen')
-        ];
-        $libros->insert($datos);
-        return $this->response->redirect(base_url('admin/libro/listar'));
+
+        if($imagen=$this->request->getFile('imagen')){
+            $nuevoTitulo = $imagen->getRandomName();
+            $imagen->move('../public/uploads/',$nuevoTitulo);
+
+            $datos=[
+                'titulo'=>$this->request->getVar('titulo'),
+                'lugarEd'=>$this->request->getVar('lugarEd'),
+                'anioPub'=>$this->request->getVar('anioPub'),
+                'numPaginas'=>$this->request->getVar('numPaginas'),
+                'numEdicion'=>$this->request->getVar('numEdicion'),
+                'idAutor'=>$this->request->getVar('idAutor'),
+                'idEditorial'=>$this->request->getVar('idEditorial'),
+                'idCategoria'=>$this->request->getVar('idCategoria'),
+                'imagen'=>$nuevoTitulo
+            ];
+            $libros->insert($datos);
+            return $this->response->redirect(base_url('admin/libro/listar'));
+        }else{
+            return $this->response->redirect(base_url('admin/libro/listar'));
+        }
+
     }
 
     public function adminborrarlibro($idLibro)
     {
         $libro = new Libros();
+
+        $datos=$libro->where('idLibro', $idLibro)->first();
+        $ruta=('../public/uploads/'.$datos['imagen']);
+        unlink($ruta);
+
         $libro->where('idLibro',$idLibro)->delete($idLibro);
         return $this->response->redirect(base_url('admin/libro/listar'));
 
@@ -86,5 +100,33 @@ class LibrosController extends Controller{
         $datos['categorias'] = $categorias->orderBy('idCategoria', 'ASC')->findAll();
         
         return view('admin/ejemplolibro/edit', $datos);
+    }
+
+    public function adminactualizarlibro()
+    {
+        $libros = new Libros();
+
+        if($imagen=$this->request->getFile('imagen')){
+            $nuevoTitulo = $imagen->getRandomName();
+            $imagen->move('../public/uploads/',$nuevoTitulo);
+
+            $datos=[
+                'titulo'=>$this->request->getVar('titulo'),
+                'lugarEd'=>$this->request->getVar('lugarEd'),
+                'anioPub'=>$this->request->getVar('anioPub'),
+                'numPaginas'=>$this->request->getVar('numPaginas'),
+                'numEdicion'=>$this->request->getVar('numEdicion'),
+                'idAutor'=>$this->request->getVar('idAutor'),
+                'idEditorial'=>$this->request->getVar('idEditorial'),
+                'idCategoria'=>$this->request->getVar('idCategoria'),
+                'imagen'=>$nuevoTitulo
+            ];
+            $idLibro = $this->request->getVar('idLibro');
+            $libros->update($idLibro, $datos);
+            return $this->response->redirect(base_url('admin/libro/listar'));
+        }else{
+            return $this->response->redirect(base_url('admin/libro/listar'));
+        }
+
     }
 }

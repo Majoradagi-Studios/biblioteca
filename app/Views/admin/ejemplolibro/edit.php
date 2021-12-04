@@ -6,7 +6,10 @@
     <title>Creación de libro</title>
 </head>
 <body>
-    <form action="<?= base_url('/admin/libro/guardar')?>" method="post">
+    <form action="<?= base_url('/admin/libro/actualizar')?>" method="post" enctype="multipart/form-data">
+
+    <input type="hidden" name="idLibro" value="<?=$libro['idLibro']?>">
+    
     <input type="text" placeholder="titulo" name="titulo" value="<?=$libro['titulo'];?>"><br>
     <input type="text" placeholder="lugarEd" name="lugarEd" value="<?=$libro['lugarEd'];?>"><br>
     <input type="text" placeholder="anioPub" name="anioPub" value="<?=$libro['anioPub'];?>"><br>
@@ -33,7 +36,7 @@
     <!--<input type="text" placeholder="idAutor" name="idAutor"><br>
     <input type="text" placeholder="idEditorial" name="idEditorial"><br>
     <input type="text" placeholder="idCategoria" name="idCategoria"><br>-->
-    <input type="text" placeholder="imagen" name="imagen"><br>
+    <input type="file" placeholder="imagen" name="imagen"><br>
     <input type="submit" value="Enviar">
     </form>
 </body>

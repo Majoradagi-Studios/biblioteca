@@ -41,7 +41,13 @@
                     <td><?=$libro['idEditorial'];?></td>
                     <td><?=$libro['idCategoria'];?></td>
 
-                    <td><?=$libro['imagen'];?></td>
+                    <td>
+                        
+                        <img src="<?=base_url()?>/uploads/<?=$libro['imagen'];?>" width="100" alt="No existe imagen">
+                        <?=$libro['imagen'];?>
+                
+                    </td>
+    
                     <td class="center">
                         <div class="btn-group" role="group" aria-label="Second group">
                             <a href="<?=base_url('/admin/libro/editar/'.$libro['idLibro']);?>" class="btn btn-sm btn-primary">editar</i></a>
