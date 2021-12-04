@@ -140,7 +140,7 @@ class LibrosController extends Controller{
             $libros->update($idLibro, $datos);
             return $this->response->redirect(base_url('admin/libro/listar'));
         }else{
-            return $this->response->redirect(base_url('admin/libro/listar'));
+            return $this->response->redirect(base_url('admin/libro/edit'));
         }
 
     }
