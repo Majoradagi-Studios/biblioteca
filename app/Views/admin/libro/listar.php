@@ -10,7 +10,7 @@
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#" class="btn btn-success rounded-pill">Agregar <i class="fa fa-plus"> </i></a></li>
+                    <li class="breadcrumb-item"><a href="<?=base_url('admin/libro/create')?>" class="btn btn-success rounded-pill">Agregar <i class="fa fa-plus"> </i></a></li>
                   </ol>
                 </nav>
               </div>
@@ -38,23 +38,32 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row" class="text-center">1</th>
-                                    <td >Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td class="center">
-                                        <div class="btn-group" role="group" aria-label="Second group">
-                                            <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
-                                            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
+                        <?php foreach($libros as $libro):?>
+                          <tr>
+                            <th scope="row" class="text-center"><?=$libro['idLibro'];?></th>
+                                <td><?=$libro['titulo'];?></td>
+                                <td><?=$libro['lugarEd'];?></td>
+                                <td><?=$libro['anioPub'];?></td>
+                                <td><?=$libro['numPaginas'];?></td>
+                                <td><?=$libro['numEdicion'];?></td>
+
+                                <!--Arreglar problema de nombres, que los muestre en vez de la id-->
+                                <td><?=$libro['idAutor'];?></td>
+                                <td><?=$libro['idEditorial'];?></td>
+                                <td><?=$libro['idCategoria'];?></td>
+
+                                <td>
+                                    <img src="<?=base_url()?>/uploads/<?=$libro['imagen'];?>" width="100" alt="No existe imagen">
+                                </td>
+
+                                <td class="center">
+                                    <div class="btn-group" role="group" aria-label="Second group">
+                                        <a href="<?=base_url('/admin/libro/editar/'.$libro['idLibro']);?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                        <a href="<?=base_url('admin/libro/borrar/'.$libro['idLibro']);?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                    </div>
+                                </td>
                             </tr>
+                            <?php endforeach;?>
                         </tbody>
                     </table>
                 </div>
