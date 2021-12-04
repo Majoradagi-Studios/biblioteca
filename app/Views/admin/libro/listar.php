@@ -48,6 +48,8 @@
                                 <td><?=$libro['numEdicion'];?></td>
 
                                 <!--Arreglar problema de nombres, que los muestre en vez de la id-->
+                                <!--$autores->where('idAutor',$libro['idAutor'])->first('array');-->
+                                <!--?php $nombreA = $autores->where('idAutor',$libro['idAutor'])->first();?> print_r($nombreA);-->
                                 <td><?=$libro['idAutor'];?></td>
                                 <td><?=$libro['idEditorial'];?></td>
                                 <td><?=$libro['idCategoria'];?></td>

@@ -78,6 +78,14 @@ $routes->get('/admin/ejemplar/listar', 'Home::adminlistarejemplar');
 $routes->get('/admin/ejemplar/create', 'Home::admincrearejemplar');
 $routes->get('/admin/ejemplar/edit', 'Home::admineditarejemplar');
 
+//Ejemplar prueba
+$routes->get('/admin/ejemploejemplar/listar', 'EjemploController::adminlistarejemplo');
+$routes->get('/admin/ejemploejemplar/create', 'EjemploController::admincrearejemplo');
+$routes->post('/admin/ejemploejemplar/guardar', 'EjemploController::adminguardarejemplo');
+$routes->get('admin/ejemploejemplar/borrar/(:num)', 'EjemploController::adminborrarejemplo/$1');
+$routes->get('/admin/ejemploejemplar/editar/(:num)', 'EjemploController::admineditarejemplo/$1');
+$routes->post('/admin/ejemploejemplar/actualizar', 'EjemploController::adminactualizarejemplo');
+
 //Usuario
 $routes->get('/admin/usuario/listar', 'Home::adminlistarusuario');
 

@@ -20,15 +20,18 @@ class LibrosController extends Controller{
     public function adminlistarlibro() 
     {
         $libros = new Libros();
-        $autores = new Autor();
-        $editoriales = new Editorial();
-        $categorias = new Categorias();
         
         $datos['libros'] = $libros->orderBy('idLibro','ASC')->findAll();
         
+        //Falta por saber como poner nombres en vez de id en las FK
+        $autores = new Autor();
+        $editoriales = new Editorial();
+        $categorias = new Categorias();
+        //echo $autores->where('idAutor',$libros['idAutor'])->first();
         $datos['autores'] = $autores->orderBy('idAutor', 'ASC')->findAll();
         $datos['editoriales'] = $editoriales->orderBy('idEditorial', 'ASC')->findAll();
         $datos['categorias'] = $categorias->orderBy('idCategoria', 'ASC')->findAll();
+        //---------------------------------------------------------
 
         $datos['header'] = view('admin/template/header');
         $datos['sidebar'] = view('admin/template/sidebar');
@@ -78,8 +81,6 @@ class LibrosController extends Controller{
         }else{
             return $this->response->redirect(base_url('admin/libro/listar'));
         }
-
-
 
     }
 
