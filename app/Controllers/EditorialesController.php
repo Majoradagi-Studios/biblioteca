@@ -11,12 +11,20 @@ class EditorialesController extends Controller{
         $editorial = new Editorial();
         $datos['editoriales'] = $editorial->orderBy('idEditorial','ASC')->findAll();
 
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
         return view('admin/editorial/listar',$datos);
     }
 
     public function create(){
 
-        return view('admin/editorial/create');
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
+        return view('admin/editorial/create', $datos);
     }
 
     public function guardar(){
@@ -113,6 +121,9 @@ class EditorialesController extends Controller{
        
         $editorial = new Editorial();
         $datos['editorial'] = $editorial->where('idEditorial',$idEditorial)->first();
+
+        $datos['header'] = view('admin/templates/header_edit');
+        $datos['footer'] = view('admin/templates/footer_edit');
 
 
         return view('admin/editorial/edit',$datos);

@@ -4,6 +4,20 @@
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
+
+          <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+              <h2 class="page-title"> <i class="fa fa-address-card"></i> Ejemplares</h2>
+              <div class="ms-auto text-end">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="<?=base_url('admin/ejemplar/create');?>" class="btn btn-success rounded-pill">Agregar <i class="fa fa-plus"> </i></a></li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+
           <div class="row">
             <div class="col-12">
               <div class="card">
