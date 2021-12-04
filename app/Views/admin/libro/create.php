@@ -24,54 +24,57 @@
                 <div class="card-body">
                   <h5 class="card-title"> <i class="fa fa-book"></i> Agregar libro</h5> <br>
                   
-                  <form>
+                  <form action="<?= base_url('/admin/libro/guardar')?>" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Título</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="text" class="form-control" name="titulo">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Lugar de edición</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="text" class="form-control" name="lugarEd">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Año</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="text" class="form-control" name="anioPub">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Número de páginas</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="text" class="form-control" name="numPaginas">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Edición</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="text" class="form-control" name="numEdicion">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Autor</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example" name="idAutor">
                                 <option selected>Seleccione una opción</option>
-                                <option value="1">Autor 1</option>
-                                <option value="2">Autor 2</option>
+                                <?php foreach($autores as $autor): ?>
+                                  <option value="<?= $autor['idAutor'];?>"><?= $autor['apellidoA']." ".$autor['nombreA'];?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Editorial</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example"  name="idEditorial">
                                 <option selected>Seleccione una opción</option>
-                                <option value="1">Editorial 1</option>
-                                <option value="2">Editorial 2</option>
+                                <?php foreach($editoriales as $editorial): ?>
+                                  <option value="<?= $editorial['idEditorial'];?>"><?= $editorial['nombreEd'];?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Categoría</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Seleccione una opción</option>
-                                <option value="1">Categoría 1</option>
-                                <option value="2">Categoría 2</option>
+                                <?php foreach($categorias as $categoria): ?>
+                                  <option value="<?= $categoria['idCategoria'];?>"><?= $categoria['codigoD']." ".$categoria['nombreC'];?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlFile1">Imagen</label> <br>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagen">
                         </div>
                         <button class="btn btn-success rounded-pill" type="submit">Guardar  <i class="fa fa-save"></i></button>
                     </form>

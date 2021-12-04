@@ -34,7 +34,7 @@ class LibrosController extends Controller{
         $datos['sidebar'] = view('admin/template/sidebar');
         $datos['footer'] = view('admin/template/footer');
         
-        return view('admin/ejemplolibro/listar', $datos);
+        return view('admin/libro/listar', $datos);
     }
 
     public function admincrearlibro()
@@ -51,7 +51,7 @@ class LibrosController extends Controller{
         $datos['sidebar'] = view('admin/template/sidebar');
         $datos['footer'] = view('admin/template/footer');
 
-        return view('admin/ejemplolibro/create', $datos);
+        return view('admin/libro/create', $datos);
     }
 
     public function adminguardarlibro()
@@ -79,6 +79,8 @@ class LibrosController extends Controller{
             return $this->response->redirect(base_url('admin/libro/listar'));
         }
 
+
+
     }
 
     public function adminborrarlibro($idLibro)
@@ -97,6 +99,7 @@ class LibrosController extends Controller{
     public function admineditarlibro($idLibro)
     {   
         $libro = new Libros();
+
         $autores = new Autor();
         $editoriales = new Editorial();
         $categorias = new Categorias();
@@ -106,8 +109,12 @@ class LibrosController extends Controller{
         $datos['autores'] = $autores->orderBy('idAutor', 'ASC')->findAll();
         $datos['editoriales'] = $editoriales->orderBy('idEditorial', 'ASC')->findAll();
         $datos['categorias'] = $categorias->orderBy('idCategoria', 'ASC')->findAll();
+
+        $datos['header'] = view('admin/templates/header_edit');
+        //$datos['sidebar'] = view('admin/templates/sidebar');
+        $datos['footer'] = view('admin/templates/footer_edit');
         
-        return view('admin/ejemplolibro/edit', $datos);
+        return view('admin/libro/edit', $datos);
     }
 
     public function adminactualizarlibro()
