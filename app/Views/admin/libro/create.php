@@ -65,7 +65,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Categoría</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example" name="idCategoria">
                                 <option selected>Seleccione una opción</option>
                                 <?php foreach($categorias as $categoria): ?>
                                   <option value="<?= $categoria['idCategoria'];?>"><?= $categoria['codigoD']." ".$categoria['nombreC'];?></option>

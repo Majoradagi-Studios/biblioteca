@@ -32,60 +32,66 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title"> <i class="fa fa-file"></i> Editar libro</h5> <br>
+                  <h5 class="card-title"> <i class="fa fa-book"></i> Editar libro</h5> <br>
                   
-                  <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Título</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Lugar de edición</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Año</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Número de páginas</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Edición</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Autor</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione una opción</option>
-                                <option value="1">Autor 1</option>
-                                <option value="2">Autor 2</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Editorial</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione una opción</option>
-                                <option value="1">Editorial 1</option>
-                                <option value="2">Editorial 2</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Categoría</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione una opción</option>
-                                <option value="1">Categoría 1</option>
-                                <option value="2">Categoría 2</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlFile1">Imagen</label> <br>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                        <button class="btn btn-success rounded-pill" type="submit">Guardar  <i class="fa fa-save"></i></button>
-                    </form>
-
+                  <form action="<?= base_url('/admin/libro/actualizar')?>" method="post" enctype="multipart/form-data">
+                    
+                    <input type="hidden" name="idLibro" value="<?=$libro['idLibro']?>">
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Título</label>
+                        <input type="text" class="form-control" name="titulo" value="<?=$libro['titulo'];?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Lugar de edición</label>
+                        <input type="text" class="form-control" name="lugarEd" value="<?=$libro['lugarEd'];?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Año</label>
+                        <input type="text" class="form-control" name="anioPub" value="<?=$libro['anioPub'];?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Número de páginas</label>
+                        <input type="text" class="form-control" name="numPaginas" value="<?=$libro['numPaginas'];?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Edición</label>
+                        <input type="text" class="form-control" name="numEdicion" value="<?=$libro['numEdicion'];?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Autor</label>
+                        <select class="form-select" aria-label="Default select example" name="idAutor">
+                            <option selected>Seleccione una opción</option>
+                            <?php foreach($autores as $autor): ?>
+                              <option value="<?= $autor['idAutor'];?>"><?= $autor['apellidoA']." ".$autor['nombreA'];?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Editorial</label>
+                        <select class="form-select" aria-label="Default select example"  name="idEditorial">
+                            <option selected>Seleccione una opción</option>
+                            <?php foreach($editoriales as $editorial): ?>
+                              <option value="<?= $editorial['idEditorial'];?>"><?= $editorial['nombreEd'];?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Categoría</label>
+                        <select class="form-select" aria-label="Default select example" name="idCategoria">
+                            <option selected>Seleccione una opción</option>
+                            <?php foreach($categorias as $categoria): ?>
+                              <option value="<?= $categoria['idCategoria'];?>"><?= $categoria['codigoD']." ".$categoria['nombreC'];?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Imagen</label> <br>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagen">
+                    </div>
+                    <button class="btn btn-success rounded-pill" type="submit">Guardar  <i class="fa fa-save"></i></button>
+                
+                  </form>
                 </div>
               </div>
             </div>

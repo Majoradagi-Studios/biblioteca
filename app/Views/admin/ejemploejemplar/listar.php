@@ -1,52 +1,29 @@
 <?php $db = db_connect(); ?>
-<?=$header?>
-<?=$sidebar?>
 
 <body>
-    <h1>Listado de libros</h1>
-    <a href="<?=base_url('admin/libro/create')?>">Agregar libro</a>
+    <h1>Listado de ejemplares</h1>
+    <a href="<?=base_url('/admin/ejemploejemplar/create')?>">Agregar ejemplar</a>
     <table class="table">
         <thead class="thead-dark">
             <tr>
                 <th scope="col" class="text-center">#</th>
-                <th scope="col" class="text-center">titulo</th>
-                <th scope="col" class="text-center">lugarEd</th>
-                <th scope="col" class="text-center">anioPub</th>
-                <th scope="col" class="text-center">numPaginas</th>
-                <th scope="col" class="text-center">numEdicion</th>
-                <th scope="col" class="text-center">idAutor</th>
-                <th scope="col" class="text-center">idEditorial</th>
-                <th scope="col" class="text-center">idCategoria</th>
-                <th scope="col" class="text-center">imagen</th>
+                <th scope="col" class="text-center">ejemplar</th>
+                <th scope="col" class="text-center">estado</th>
+                <th scope="col" class="text-center">idLibro</th>
                 <th class="center text-danger">Opciones</th>
             </tr>
         </thead>
         <tbody>
-        <?php foreach($libros as $libro):?>
+        <?php foreach($ejemplares as $ejemplar):?>
             <tr>
-                <th scope="row" class="text-center"><?=$libro['idLibro'];?></th>
-                    <td><?=$libro['titulo'];?></td>
-                    <td><?=$libro['lugarEd'];?></td>
-                    <td><?=$libro['anioPub'];?></td>
-                    <td><?=$libro['numPaginas'];?></td>
-                    <td><?=$libro['numEdicion'];?></td>
-
-                    <!--Arreglar problema de nombres, que los muestre en vez de la id-->
-                    <td><?=$libro['idAutor'];?></td>
-                    <td><?=$libro['idEditorial'];?></td>
-                    <td><?=$libro['idCategoria'];?></td>
-
-                    <td>
-                        
-                        <img src="<?=base_url()?>/uploads/<?=$libro['imagen'];?>" width="100" alt="No existe imagen">
-                        <?=$libro['imagen'];?>
-                
-                    </td>
-    
+                <th scope="row" class="text-center"><?=$ejemplar['idEjemplar'];?></th>
+                    <td><?=$ejemplar['ejemplar'];?></td>
+                    <td><?=$ejemplar['estado'];?></td>
+                    <td><?=$ejemplar['idLibro'];?></td>
                     <td class="center">
                         <div class="btn-group" role="group" aria-label="Second group">
-                            <a href="<?=base_url('/admin/libro/editar/'.$libro['idLibro']);?>" class="btn btn-sm btn-primary">editar</i></a>
-                            <a href="<?=base_url('admin/libro/borrar/'.$libro['idLibro']);?>" class="btn btn-sm btn-danger">borrar</i></a>
+                            <a href="<?=base_url('/admin/ejemploejemplar/editar/'.$ejemplar['idEjemplar']);?>" class="btn btn-sm btn-primary">editar</i></a>
+                            <a href="<?=base_url('admin/ejemploejemplar/borrar/'.$ejemplar['idEjemplar']);?>" class="btn btn-sm btn-danger">borrar</i></a>
                         </div>
                     </td>
             </tr>
