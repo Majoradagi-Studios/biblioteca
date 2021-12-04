@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-12-2021 a las 23:10:22
+-- Tiempo de generación: 04-12-2021 a las 06:27:43
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.3
 
@@ -92,13 +92,6 @@ CREATE TABLE `ejemplares` (
   `idLibro` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Volcado de datos para la tabla `ejemplares`
---
-
-INSERT INTO `ejemplares` (`idEjemplar`, `ejemplar`, `estado`, `idLibro`) VALUES
-(1, 1, 'Disponible', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -114,15 +107,23 @@ CREATE TABLE `libros` (
   `numEdicion` int(11) DEFAULT NULL,
   `idAutor` int(11) DEFAULT NULL,
   `idEditorial` int(11) DEFAULT NULL,
-  `idCategoria` int(11) DEFAULT NULL
+  `idCategoria` int(11) DEFAULT NULL,
+  `imagen` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `libros`
 --
 
-INSERT INTO `libros` (`idLibro`, `titulo`, `lugarEd`, `anioPub`, `numPaginas`, `numEdicion`, `idAutor`, `idEditorial`, `idCategoria`) VALUES
-(1, 'Anita', 'Mexico', '2021', 150, 1, 1, 2, 1);
+INSERT INTO `libros` (`idLibro`, `titulo`, `lugarEd`, `anioPub`, `numPaginas`, `numEdicion`, `idAutor`, `idEditorial`, `idCategoria`, `imagen`) VALUES
+(2, 'Anita', 'Mexico', '2021', 150, 1, 1, 2, 1, '1638585348_ed88c1dbab1b03483af5.jpg'),
+(3, 'Felicia', 'España', '2015', 150, 2, 1, 2, 1, '1638592464_bf685c9a581c2aa8a6c0.jpg'),
+(4, 'Retrato', 'Colombia', '1956', 200, 1, 1, 2, 1, 'Imagen.png'),
+(6, 'EL titere', 'Estados unidos', '2010', 150, 1, 1, 2, 1, 'Imagen.png'),
+(7, 'EL titere', 'Estados unidos', '2010', 150, 1, 1, 2, 1, 'Imagen.png'),
+(8, 'Anita', 'Mexico', '2021', 150, 1, 1, 2, 1, 'Imagen.png'),
+(9, 'Vida', 'Mexico', '2020', 200, 1, 1, 2, 1, NULL),
+(12, 'Ponyo', 'Mexico', '2020', 250, 0, 1, 2, NULL, '1638593550_3da99a8f338f22dbdbd5.jpg');
 
 -- --------------------------------------------------------
 
@@ -222,7 +223,7 @@ ALTER TABLE `ejemplares`
 -- AUTO_INCREMENT de la tabla `libros`
 --
 ALTER TABLE `libros`
-  MODIFY `idLibro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idLibro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
