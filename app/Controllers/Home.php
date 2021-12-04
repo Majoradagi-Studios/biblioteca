@@ -19,9 +19,8 @@ class Home extends BaseController
 
     public function admin()
     {
-        $datos['header'] = view('admin/template/header');
-        $datos['sidebar'] = view('admin/template/sidebar');
-        $datos['footer'] = view('admin/template/footer');
+        $datos['header'] = view('admin/templates/header_panel');
+        $datos['footer'] = view('admin/templates/footer_panel');
 
         return view('admin/panel',$datos);
     }
