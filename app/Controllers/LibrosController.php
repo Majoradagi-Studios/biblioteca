@@ -64,8 +64,27 @@ class LibrosController extends Controller{
         return $this->response->redirect(base_url('admin/libro/listar'));
     }
 
-    public function admineditarlibro()
+    public function adminborrarlibro($idLibro)
     {
-        return view('admin/ejemplolibro/edit');
+        $libro = new Libros();
+        $libro->where('idLibro',$idLibro)->delete($idLibro);
+        return $this->response->redirect(base_url('admin/libro/listar'));
+
+    }
+
+    public function admineditarlibro($idLibro)
+    {   
+        $libro = new Libros();
+        $autores = new Autor();
+        $editoriales = new Editorial();
+        $categorias = new Categorias();
+
+        $datos['libro'] = $libro->where('idLibro',$idLibro)->first();
+
+        $datos['autores'] = $autores->orderBy('idAutor', 'ASC')->findAll();
+        $datos['editoriales'] = $editoriales->orderBy('idEditorial', 'ASC')->findAll();
+        $datos['categorias'] = $categorias->orderBy('idCategoria', 'ASC')->findAll();
+        
+        return view('admin/ejemplolibro/edit', $datos);
     }
 }

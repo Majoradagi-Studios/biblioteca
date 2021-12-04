@@ -45,7 +45,7 @@
                     <td class="center">
                         <div class="btn-group" role="group" aria-label="Second group">
                             <a href="<?=base_url('/admin/libro/editar/'.$libro['idLibro']);?>" class="btn btn-sm btn-primary">editar</i></a>
-                            <a href="<?=base_url('/admin/libro/eliminar/'.$libro['idLibro']);?>" class="btn btn-sm btn-danger">borrar</i></a>
+                            <a href="<?=base_url('admin/libro/borrar/'.$libro['idLibro']);?>" class="btn btn-sm btn-danger">borrar</i></a>
                         </div>
                     </td>
             </tr>

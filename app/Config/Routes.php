@@ -67,7 +67,8 @@ $routes->post('admin/editorial/actualizar', 'EditorialesController::actualizar')
 $routes->get('/admin/libro/listar', 'LibrosController::adminlistarlibro');
 $routes->get('/admin/libro/create', 'LibrosController::admincrearlibro');
 $routes->post('/admin/libro/guardar', 'LibrosController::adminguardarlibro');
-$routes->get('/admin/libro/edit', 'LibrosController::admineditarlibro');
+$routes->get('admin/libro/borrar/(:num)', 'LibrosController::adminborrarlibro/$1');
+$routes->get('/admin/libro/editar/(:num)', 'LibrosController::admineditarlibro/$1');
 
 //Ejemplar
 $routes->get('/admin/ejemplar/listar', 'Home::adminlistarejemplar');
