@@ -11,6 +11,12 @@ class Home extends BaseController
         return view('inicio', $datos);
     }
 
+    public function detalleLibro(){
+        $datos['header'] = view('site/template/header');
+        $datos['footer'] = view('site/template/footer');
+        return view('detalleLibro', $datos);
+    }
+
     public function admin()
     {
         $datos['header'] = view('admin/template/header');

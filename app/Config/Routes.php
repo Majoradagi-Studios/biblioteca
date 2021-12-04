@@ -33,6 +33,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+$routes->get('/catalogo/detalleLibro', 'Home::detalleLibro');
+
 //RUTAS PARA PROBAR EL DISEÑO
 $routes->get('/login', 'Home::login');
 
