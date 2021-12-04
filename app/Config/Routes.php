@@ -38,7 +38,7 @@ $routes->get('/login', 'Home::login');
 
 $routes->get('/admin', 'Home::admin', ['filter' => 'authGuard']);
 
-//Categorias
+//Categoria
 $routes->get('/admin/categoria/listar', 'CategoriasController::adminlistarcategoria'); 
 $routes->get('/admin/categoria/create', 'CategoriasController::admincrearcategoria');
 $routes->post('/admin/categoria/guardar', 'CategoriasController::guardar');
@@ -46,6 +46,7 @@ $routes->post('/admin/categoria/actualizar', 'CategoriasController::actualizar')
 $routes->get('/admin/categoria/edit/(:num)', 'CategoriasController::editar/$1');
 $routes->get('borrar/(:num)', 'CategoriasController::borrar/$1');
 
+//Autor
 $routes->get('/admin/autor/listar', 'AutoresController::listarAutor');
 $routes->get('/admin/autor/create', 'AutoresController::crearAutor');
 $routes->get('/admin/autor/edit', 'AutoresController::editarAutor');
@@ -54,18 +55,28 @@ $routes->get('/admin/autor/eliminar/(:num)', 'AutoresController::eliminarAutor/$
 $routes->get('/admin/autor/editar/(:num)', 'AutoresController::editarAutor/$1');
 $routes->post('/admin/autor/actualizar', 'AutoresController::actualizarAutor');
 
-//$routes->get('/admin/editorial/listar', 'Home::adminlistareditorial');
-//$routes->get('/admin/editorial/create', 'Home::admincreareditorial');
-//$routes->get('/admin/editorial/edit', 'Home::admineditareditorial');
+//Editorial
+$routes->get('admin/editorial/listar', 'EditorialesController::index');
+$routes->get('admin/editorial/create', 'EditorialesController::create');
+$routes->post('admin/editorial/guardar', 'EditorialesController::guardar');
+$routes->get('admin/editorial/borrar/(:num)', 'EditorialesController::borrar/$1');
+$routes->get('admin/editorial/edit/(:num)', 'EditorialesController::edit/$1');
+$routes->post('admin/editorial/actualizar', 'EditorialesController::actualizar');
 
+//Libro
+$routes->get('/admin/libro/listar', 'LibrosController::adminlistarlibro');
+$routes->get('/admin/libro/create', 'LibrosController::admincrearlibro');
+$routes->post('/admin/libro/guardar', 'LibrosController::adminguardarlibro');
+$routes->get('admin/libro/borrar/(:num)', 'LibrosController::adminborrarlibro/$1');
+$routes->get('/admin/libro/editar/(:num)', 'LibrosController::admineditarlibro/$1');
+$routes->post('/admin/libro/actualizar', 'LibrosController::adminactualizarlibro');
+
+//Ejemplar
 $routes->get('/admin/ejemplar/listar', 'Home::adminlistarejemplar');
 $routes->get('/admin/ejemplar/create', 'Home::admincrearejemplar');
 $routes->get('/admin/ejemplar/edit', 'Home::admineditarejemplar');
 
-$routes->get('/admin/libro/listar', 'Home::adminlistarlibro');
-$routes->get('/admin/libro/create', 'Home::admincrearlibro');
-$routes->get('/admin/libro/edit', 'Home::admineditarlibro');
-
+//Usuario
 $routes->get('/admin/usuario/listar', 'Home::adminlistarusuario');
 
 /*
@@ -88,12 +99,4 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 //Mis rutas
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/signup', 'SignupController::index');
-$routes->get('/catalogo', 'LibrosController::index', ['filter' => 'authGuard']);
-
-//RUTAS EDITORIAL
-$routes->get('admin/editorial/listar', 'EditorialesController::index');
-$routes->get('admin/editorial/create', 'EditorialesController::create');
-$routes->post('admin/editorial/guardar', 'EditorialesController::guardar');
-$routes->get('admin/editorial/borrar/(:num)', 'EditorialesController::borrar/$1');
-$routes->get('admin/editorial/edit/(:num)', 'EditorialesController::edit/$1');
-$routes->post('admin/editorial/actualizar', 'EditorialesController::actualizar');
+$routes->get('/catalogo', 'LibrosController::catalogo', ['filter' => 'authGuard']);
