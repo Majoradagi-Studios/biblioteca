@@ -20,54 +20,6 @@ class Home extends BaseController
         return view('admin/panel',$datos);
     }
 
-    //ADMINISTRADOR --> CATEGORIAS
-    public function adminlistarcategoria()
-    {
-        return view('admin/categoria/listar');
-    }
-
-    public function admincrearcategoria()
-    {
-        return view('admin/categoria/create');
-    }
-
-    public function admineditarcategoria()
-    {
-        return view('admin/categoria/edit');
-    }
-
-    //ADMINISTRADOR --> AUTOR
-    public function adminlistarautor()
-    {
-        return view('admin/autor/listar');
-    }
-
-    public function admincrearautor()
-    {
-        return view('admin/autor/create');
-    }
-
-    public function admineditarautor()
-    {
-        return view('admin/autor/edit');
-    }
-
-    ////ADMINISTRADOR --> EDITORIAL
-    //public function adminlistareditorial()
-    //{
-    //    return view('admin/editorial/listar');
-    //}
-//
-    //public function admincreareditorial()
-    //{
-    //    return view('admin/editorial/create');
-    //}
-//
-    //public function admineditareditorial()
-    //{
-    //    return view('admin/editorial/edit');
-    //}
-
     //ADMINISTRADOR --> EJEMPLAR
     public function adminlistarejemplar()
     {
@@ -84,33 +36,6 @@ class Home extends BaseController
         return view('admin/ejemplar/edit');
     }
 
-    //ADMINISTRADOR --> LIBRO
-    public function adminlistarlibro()
-    {
-        $datos['header'] = view('admin/template/header');
-        $datos['sidebar'] = view('admin/template/sidebar');
-        $datos['footer'] = view('admin/template/footer');
-
-        return view('admin/libro/listar', $datos);
-    }
-
-    public function admincrearlibro()
-    {
-        $datos['header'] = view('admin/template/header');
-        $datos['sidebar'] = view('admin/template/sidebar');
-        $datos['footer'] = view('admin/template/footer');
-
-        return view('admin/libro/create', $datos);
-    }
-
-    public function admineditarlibro()
-    {
-        $datos['header'] = view('admin/template/header');
-        $datos['sidebar'] = view('admin/template/sidebar');
-        $datos['footer'] = view('admin/template/footer');
-
-        return view('admin/libro/edit', $datos);
-    }
 
     //ADMINISTRADOR --> USUARIOS
     public function adminlistarusuario()
