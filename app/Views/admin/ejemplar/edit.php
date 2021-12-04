@@ -36,25 +36,24 @@
                 <div class="card-body">
                   <h5 class="card-title">Editar ejemplar</h5> <br>
                   
-                  <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Número de ejemplares</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Estado</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione una opción</option>
-                                <option value="1">Disponible</option>
-                                <option value="2">Ocupado</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Libro</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                        </div>
-                        <button class="btn btn-success rounded-pill" type="submit">Guardar  <i class="fa fa-save"></i></button>
-                    </form>
+                  <form action="<?=base_url('/admin/ejemplar/actualizar')?>" method="post" enctype="multipart/form-data">
+                      
+                  <input type="hidden" name="idEjemplar" value="<?=$ejemplar['idEjemplar']?>">
+                  <input type="hidden" name="ejemplar" value="<?=$ejemplar['ejemplar']?>">
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Estado</label>
+                        <select class="form-select" aria-label="Default select example" name="estado">
+                            <option selected>Seleccione una opción</option>
+                            <option value="Disponible">Disponible</option>
+                            <option value="Ocupado">Ocupado</option>
+                        </select>
+                    </div>
+
+                    <input type="hidden" name="idLibro" value="<?=$ejemplar['idLibro']?>">
+
+                    <button class="btn btn-success rounded-pill" type="submit">Guardar  <i class="fa fa-save"></i></button>
+                </form>
 
                 </div>
               </div>
