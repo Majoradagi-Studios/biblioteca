@@ -11,7 +11,7 @@
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="<?=base_url('/admin/autor/listar');?>" class="btn btn-warning rounded-pill">Regresar <i class="fa fa-undo"> </i></a></li>
+                    <li class="breadcrumb-item"><a href="<?=base_url('/admin/libro/listar');?>" class="btn btn-warning rounded-pill">Regresar <i class="fa fa-undo"> </i></a></li>
                   </ol>
                 </nav>
               </div>

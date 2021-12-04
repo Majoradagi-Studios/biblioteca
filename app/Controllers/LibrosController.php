@@ -29,6 +29,10 @@ class LibrosController extends Controller{
         $datos['autores'] = $autores->orderBy('idAutor', 'ASC')->findAll();
         $datos['editoriales'] = $editoriales->orderBy('idEditorial', 'ASC')->findAll();
         $datos['categorias'] = $categorias->orderBy('idCategoria', 'ASC')->findAll();
+
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
         
         return view('admin/ejemplolibro/listar', $datos);
     }
@@ -42,6 +46,10 @@ class LibrosController extends Controller{
         $datos['autores'] = $autores->orderBy('idAutor', 'ASC')->findAll();
         $datos['editoriales'] = $editoriales->orderBy('idEditorial', 'ASC')->findAll();
         $datos['categorias'] = $categorias->orderBy('idCategoria', 'ASC')->findAll();
+
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
 
         return view('admin/ejemplolibro/create', $datos);
     }
