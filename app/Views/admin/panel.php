@@ -1,5 +1,4 @@
 <?=$header;?>
-<?=$sidebar;?>
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
@@ -7,7 +6,7 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Usuarios</h5>
+                  <h5 class="card-title">Dashboard</h5>
                   <table class="table">
                         <thead class="thead-dark">
                             <tr>

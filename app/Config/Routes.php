@@ -74,9 +74,9 @@ $routes->get('/admin/libro/editar/(:num)', 'LibrosController::admineditarlibro/$
 $routes->post('/admin/libro/actualizar', 'LibrosController::adminactualizarlibro');
 
 //Ejemplar
-$routes->get('/admin/ejemplar/listar', 'Home::adminlistarejemplar');
-$routes->get('/admin/ejemplar/create', 'Home::admincrearejemplar');
-$routes->get('/admin/ejemplar/edit', 'Home::admineditarejemplar');
+$routes->get('/admin/ejemplar/listar', 'EjemplarController::adminlistarejemplar');
+$routes->get('/admin/ejemplar/create', 'EjemplarController::admincrearejemplar');
+$routes->get('/admin/ejemplar/edit', 'EjemplarController::admineditarejemplar');
 
 //Ejemplar prueba
 $routes->get('/admin/ejemploejemplar/listar', 'EjemploController::adminlistarejemplo');
@@ -88,6 +88,7 @@ $routes->post('/admin/ejemploejemplar/actualizar', 'EjemploController::adminactu
 
 //Usuario
 $routes->get('/admin/usuario/listar', 'Home::adminlistarusuario');
+$routes->get('/admin/usuario/edit', 'Home::admineditarusuario');
 
 /*
  * --------------------------------------------------------------------

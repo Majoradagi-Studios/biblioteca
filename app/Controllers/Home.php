@@ -19,28 +19,13 @@ class Home extends BaseController
 
     public function admin()
     {
-        $datos['header'] = view('admin/template/header');
-        $datos['sidebar'] = view('admin/template/sidebar');
-        $datos['footer'] = view('admin/template/footer');
+        $datos['header'] = view('admin/templates/header_panel');
+        $datos['footer'] = view('admin/templates/footer_panel');
 
         return view('admin/panel',$datos);
     }
 
-    //ADMINISTRADOR --> EJEMPLAR
-    public function adminlistarejemplar()
-    {
-        return view('admin/ejemplar/listar');
-    }
-
-    public function admincrearejemplar()
-    {
-        return view('admin/ejemplar/create');
-    }
-
-    public function admineditarejemplar()
-    {
-        return view('admin/ejemplar/edit');
-    }
+    
 
 
     //ADMINISTRADOR --> USUARIOS
@@ -51,6 +36,14 @@ class Home extends BaseController
         $datos['footer'] = view('admin/template/footer');
 
         return view('admin/usuario/listar', $datos);
+    }
+
+    public function admineditarusuario()
+    {
+        $datos['header'] = view('admin/templates/header');
+        $datos['footer'] = view('admin/templates/footer');
+
+        return view('admin/usuario/edit', $datos);
     }
 
 }

@@ -16,7 +16,7 @@ print_r($autor);
         <div class="page-breadcrumb">
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-              <h4 class="page-title"> <i class="fa fa-heartbeat"></i> <?=$autor['nombreA'].' '.$autor['apellidoA'];?> </h4>
+              <h2 class="page-title"> <i class="fa fa-heartbeat"></i> <?=$autor['nombreA'].' '.$autor['apellidoA'];?> </h2>
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
