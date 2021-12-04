@@ -12,10 +12,10 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/favicon/favicon.ico"
+      href="../../images/favicon/favicon.ico"
     />
     <!-- Custom CSS -->
-    <link href="backend/dist/css/style.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../backend/dist/css/style.min.css" rel="stylesheet" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -61,7 +61,7 @@
                 <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                 <!-- Dark Logo icon -->
                 <img
-                  src="backend/assets/images/logo-icon.png"
+                  src="../../backend/assets/images/logo-icon.png"
                   alt="homepage"
                   class="light-logo"
                   width="25"
@@ -72,7 +72,7 @@
               <span class="logo-text ms-2">
                 <!-- dark Logo text -->
                 <img
-                  src="backend/assets/images/logo-texto3.png"
+                  src="../../backend/assets/images/logo-texto3.png"
                   alt="homepage"
                   class="light-logo center"
                 />

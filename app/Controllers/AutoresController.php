@@ -9,14 +9,17 @@ class  AutoresController extends Controller{
         $autor = new Autor();
         $datos['autores']=$autor->orderBy('idAutor','ASC')->findAll();
 
-        $datos['header'] = view('admin/templates/header');
-        $datos['footer'] = view('admin/templates/footer');
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
         return view('admin/autor/listar',$datos);
     }
     
     public function crearAutor(){
-        $datos['header'] = view('admin/templates/header');
-        $datos['footer'] = view('admin/templates/footer');
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
         
         return view('admin/autor/create',$datos);
     }
