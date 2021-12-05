@@ -11,10 +11,13 @@ class LibrosController extends Controller{
 
     public function catalogo()
     {
-        //$session = session();
-        // echo "Hello : ".$session->get('nombre');
+        $libros = new Libros();
+        $categorias = new Categorias();
+        
+        $datos['libros'] = $libros->orderBy('idLibro','ASC')->findAll();
+        $datos['categorias'] = $categorias->orderBy('idCategoria', 'ASC')->findAll();
         echo "Cargando...";
-        return view('catalogo');
+        return view('catalogo', $datos);
     }
 
     public function adminlistarlibro() 

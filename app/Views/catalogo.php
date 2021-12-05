@@ -164,89 +164,24 @@
                 <div class="container-fluid px-5 mt-4 mb-4">
                     <!-- Aqui inicia el contenido -->                    
                     <h1>Catálogo de libros</h1>
-                    <small>Todos los libros existentes</small>
+                    <small class="">Todos los libros existentes</small>
 
-                    <div class="row">
-                    <!-- 3 libros de ejemplo -->
-                        <div class="col mt-4">
-                            <div class="card" style="width: 17rem;">
-                                <img src="img/Libro.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libro de ejemplo</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
+                    <!--libro-->
+                    <div class="row mt-4">
+                        <?php foreach($libros as $libro): ?>
+                            <div class="col">
+                                <div class="card" style="width: 17rem;">
+                                    <img src="<?=base_url()?>/uploads/<?=$libro['imagen'];?>" class="card-img-top" alt="No existe imagen">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?=$libro['titulo'];?></h5>
+                                        <p class="card-text"><?=$libro['idAutor'];?></p>
+                                        <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card ml-5 mt-4" style="width: 17rem;">
-                                <img src="img/Libro.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libro de ejemplo</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col">
-                            <div class="card ml-5 mt-4" style="width: 17rem;">
-                                <img src="img/Libro.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libro de ejemplo</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 3 libros de ejemplo -->
-                        <div class="col">
-                            <div class="card mt-4" style="width: 17rem;">
-                                <img src="img/Libro.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libro de ejemplo</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card ml-5 mt-4" style="width: 17rem;">
-                                <img src="img/Libro.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libro de ejemplo</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col">
-                            <div class="card ml-5 mt-4" style="width: 17rem;">
-                                <img src="img/Libro.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libro de ejemplo</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
+                        <?php endforeach; ?>
                     </div>
 
                 </div>

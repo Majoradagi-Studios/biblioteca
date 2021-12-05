@@ -66,6 +66,7 @@ $routes->get('admin/editorial/edit/(:num)', 'EditorialesController::edit/$1');
 $routes->post('admin/editorial/actualizar', 'EditorialesController::actualizar');
 
 //Libro
+$routes->get('/catalogo', 'LibrosController::catalogo', ['filter' => 'authGuard']);
 $routes->get('/admin/libro/listar', 'LibrosController::adminlistarlibro');
 $routes->get('/admin/libro/create', 'LibrosController::admincrearlibro');
 $routes->post('/admin/libro/guardar', 'LibrosController::adminguardarlibro');
@@ -81,7 +82,7 @@ $routes->get('/admin/ejemplar/borrar/(:num)', 'EjemplarController::adminborrarej
 $routes->get('/admin/ejemplar/editar/(:num)', 'EjemplarController::admineditarejemplar/$1');
 $routes->post('/admin/ejemplar/actualizar', 'EjemplarController::adminactualizarejemplar');
 
-//Ejemplar prueba
+//Pruebas
 $routes->get('/admin/ejemploejemplar/listar', 'EjemploController::adminlistarejemplo');
 $routes->get('/admin/ejemploejemplar/create', 'EjemploController::admincrearejemplo');
 $routes->post('/admin/ejemploejemplar/guardar', 'EjemploController::adminguardarejemplo');
@@ -113,4 +114,3 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 //Mis rutas
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/signup', 'SignupController::index');
-$routes->get('/catalogo', 'LibrosController::catalogo', ['filter' => 'authGuard']);
