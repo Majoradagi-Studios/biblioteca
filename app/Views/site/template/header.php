@@ -66,16 +66,16 @@
     
 
 
-    <link rel="shortcut icon" href="../img/favicon/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../../img/favicon/favicon.png" type="image/png">
 
-    <link rel="stylesheet" type="text/css" href="../font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <!--<link rel="stylesheet" type="text/css" href="css/responsive.css">-->
 
     <link rel="manifest" href="manifest.json">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../js/scripts.js"></script>
+    <script src="../../js/scripts.js"></script>
 
     <script src="https://kit.fontawesome.com/8d43b1ab38.js" crossorigin="anonymous"></script>
 
@@ -84,14 +84,14 @@
 
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-1 " href="<?php echo base_url(); ?>/catalogo"><img src="../img/logoCBTis.png"></a>
+        <a class="navbar-brand ps-1 " href="<?php echo base_url(); ?>/catalogo"><img src="../../img/logoCBTis.png"></a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-user fa-fw"></i>Bienvenido: <?php echo $session->get('nombre')." ".$session->get('apellidoP');?></a>
+                    <i class="fas fa-user fa-fw"></i>Bienvenido: <?= $session->get('nombre')." ".$session->get('apellidoP');?></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <?php if($session->get('rol') == 1  ): ?>
                     <li><a class="dropdown-item" href="<?php echo base_url(); ?>/admin">Administrar</a></li>
