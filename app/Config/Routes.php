@@ -94,7 +94,9 @@ $routes->post('/admin/ejemploejemplar/actualizar', 'EjemploController::adminactu
 
 //Usuario
 $routes->get('/admin/usuario/listar', 'Home::adminlistarusuario');
+$routes->get('/admin/usuario/create', 'Home::admincrearusuario');
 $routes->get('/admin/usuario/edit', 'Home::admineditarusuario');
+
 
 /*
  * --------------------------------------------------------------------

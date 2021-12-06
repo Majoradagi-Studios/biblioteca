@@ -7,6 +7,13 @@
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
               <h2 class="page-title"> <i class="fa fa-users"></i> Usuarios</h2>
+              <div class="ms-auto text-end">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="<?=base_url('/admin/usuario/create');?>" class="btn btn-success rounded-pill">Agregar <i class="fa fa-plus"> </i></a></li>
+                  </ol>
+                </nav>
+              </div>
             </div>
           </div>
 
@@ -39,7 +46,6 @@
                                     <td>Otto</td>
                                     <td class="center">
                                         <div class="btn-group" role="group" aria-label="Second group">
-                                            <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
                                             <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>

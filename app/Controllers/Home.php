@@ -38,6 +38,15 @@ class Home extends BaseController
         return view('admin/usuario/listar', $datos);
     }
 
+    public function admincrearusuario()
+    {
+        $datos['header'] = view('admin/template/header');
+        $datos['sidebar'] = view('admin/template/sidebar');
+        $datos['footer'] = view('admin/template/footer');
+
+        return view('admin/usuario/create', $datos);
+    }
+
     public function admineditarusuario()
     {
         $datos['header'] = view('admin/templates/header');
