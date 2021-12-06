@@ -41,6 +41,7 @@ $routes->get('/signin', 'UsuariosController::index');
 //Catalogo
 $routes->get('/catalogo', 'LibrosController::catalogo', ['filter' => 'authGuard']);
 $routes->get('/catalogo/detalle/(:num)', 'LibrosController::detalleLibro/$1', ['filter' => 'authGuard']);
+$routes->get('/catalogo/buscar/(:num)', 'LibrosController::busqueda/$1', ['filter' => 'authGuard']);
 
 //Rutas Admin
 //Admin

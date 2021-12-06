@@ -52,7 +52,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
 
-    <title>Catálogo - Biblioteca CBTis147</title>
+    <title>Detalle de libro - Biblioteca CBTis147</title>
 
     <!-- Splash screen  -->
     <meta name="apple-mobile-web-app-capable" content="yes">

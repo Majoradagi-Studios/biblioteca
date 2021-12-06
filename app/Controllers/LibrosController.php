@@ -22,6 +22,17 @@ class LibrosController extends Controller{
         return view('catalogo', $datos);
     }
 
+    public function busqueda($idCategoria)
+    {
+        $libros = new Libros();
+        $categorias = new Categorias();
+        //$datos['libros'] = $libros->orderBy('idLibro','ASC')->findAll();
+        $datos['categorias'] = $categorias->orderBy('idCategoria', 'ASC')->findAll();
+        $datos['libros'] = $libros->where('idCategoria', $idCategoria)->first();
+        echo "Cargando...";
+        return view('busqueda', $datos);
+    }
+
     public function detalleLibro($idLibro)
     {
         $libro = new Libros();
