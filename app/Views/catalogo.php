@@ -174,7 +174,10 @@
                                     <img src="<?=base_url()?>/uploads/<?=$libro['imagen'];?>" class="card-img-top" alt="No existe imagen">
                                     <div class="card-body">
                                         <h5 class="card-title"><?=$libro['titulo'];?></h5>
-                                        <p class="card-text"><?=$libro['idAutor'];?></p>
+                                        
+                                        <?php $autor = $autores->where('idAutor',$libro['idAutor'])->first();?>
+                                        <p class="card-text">Por: <?=$autor['apellidoA'].' '.$autor['nombreA'];?></p>
+
                                         <div class="d-grid gap-2 col-6 mx-auto">
                                             <a href="<?=base_url('/catalogo/detalle/'.$libro['idLibro']);?>" class="btn btn-warning"><strong>Detalles</strong></a>
                                         </div>

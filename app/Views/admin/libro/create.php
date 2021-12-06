@@ -24,26 +24,32 @@
                 <div class="card-body">
                   <h5 class="card-title"> <i class="fa fa-book"></i> Agregar libro</h5> <br>
                   
+                  <?php if(isset($validation)):?>
+                      <div class="alert alert-warning">
+                        <?= $validation->listErrors() ?>
+                      </div>
+                    <?php endif;?>
+                  
                   <form action="<?= base_url('/admin/libro/guardar')?>" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Título</label>
-                            <input type="text" class="form-control" name="titulo">
+                            <input type="text" class="form-control" name="titulo" value="<?= set_value('titulo') ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Lugar de edición</label>
-                            <input type="text" class="form-control" name="lugarEd">
+                            <input type="text" class="form-control" name="lugarEd" value="<?= set_value('lugarEd') ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Año</label>
-                            <input type="text" class="form-control" name="anioPub">
+                            <input type="text" class="form-control" name="anioPub" value="<?= set_value('anioPub') ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Número de páginas</label>
-                            <input type="text" class="form-control" name="numPaginas">
+                            <input type="text" class="form-control" name="numPaginas" value="<?= set_value('numPaginas') ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Edición</label>
-                            <input type="text" class="form-control" name="numEdicion">
+                            <input type="text" class="form-control" name="numEdicion" value="<?= set_value('numEdicion') ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Autor</label>

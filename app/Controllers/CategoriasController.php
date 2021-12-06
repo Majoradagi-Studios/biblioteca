@@ -45,7 +45,7 @@ class CategoriasController extends Controller{
             'nombreC'=>'required|min_length[6]',
             'descripcion'=>'required|min_length[6]',
         ]);
-        if(!$validacion){
+        if($validacion){
             $sessions = session();
             $sessions->setFlashData('mensaje', 'Faltan datos por agregar');
 

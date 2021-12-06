@@ -1,5 +1,6 @@
 <?=$header;?>
 <?=$sidebar;?>
+
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
@@ -47,12 +48,15 @@
                                 <td><?=$libro['numPaginas'];?></td>
                                 <td><?=$libro['numEdicion'];?></td>
 
-                                <!--Arreglar problema de nombres, que los muestre en vez de la id-->
-                                <!--$autores->where('idAutor',$libro['idAutor'])->first('array');-->
-                                <!--?php $nombreA = $autores->where('idAutor',$libro['idAutor'])->first();?> print_r($nombreA);-->
-                                <td><?=$libro['idAutor'];?></td>
-                                <td><?=$libro['idEditorial'];?></td>
-                                <td><?=$libro['idCategoria'];?></td>
+                                <!--¿Solución definitiva?-->
+                                <?php $autor = $autores->where('idAutor',$libro['idAutor'])->first();?>
+                                <?php $editorial = $editoriales->where('idEditorial',$libro['idEditorial'])->first();?>
+                                <?php $categoria = $categorias->where('idCategoria',$libro['idCategoria'])->first();?>
+
+                                <td><?=$autor['apellidoA'].' '.$autor['nombreA'];?></td>
+                                <td><?=$editorial['nombreEd'];?></td>
+                                <td><?=$categoria['nombreC'];?></td>
+                                <!-- ------------------------ -->
 
                                 <td>
                                     <img src="<?=base_url()?>/uploads/<?=$libro['imagen'];?>" width="100" alt="No existe imagen">

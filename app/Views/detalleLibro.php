@@ -1,4 +1,9 @@
 <?=$header;?>
+<?php 
+$autor = $autores->where('idAutor',$libro['idAutor'])->first();
+$editorial = $editoriales->where('idEditorial',$libro['idEditorial'])->first();
+$categoria = $categorias->where('idCategoria',$libro['idCategoria'])->first();
+?>
         <!-- Contenido -->
         <div id="layoutSidenav_content">
         <main>
@@ -15,15 +20,14 @@
                                             <?= $libro['titulo'];?>
                                         </strong>
                                     </div>
-                                    
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"> Lugar de edición: <mark> <?= $libro['lugarEd'];?> </mark></li>
                                         <li class="list-group-item"> Año: <mark> <?= $libro['anioPub'];?> </mark></li>
                                         <li class="list-group-item"> Num. páginas: <mark> <?= $libro['numPaginas'];?></mark></li>
                                         <li class="list-group-item"> Num. edición: <mark> <?= $libro['numEdicion'];?></mark></li>
-                                        <li class="list-group-item"> Autor: <mark><?= $libro['idAutor'];?> </mark></li>
-                                        <li class="list-group-item">Editorial: <mark><?= $libro['idEditorial'];?></mark></li>
-                                        <li class="list-group-item">Categoría: <mark><?= $libro['idCategoria'];?></mark></li>
+                                        <li class="list-group-item"> Autor: <mark><?=$autor['apellidoA'].' '.$autor['nombreA'];?> </mark></li>
+                                        <li class="list-group-item">Editorial: <mark><?=$editorial['nombreEd'];?></mark></li>
+                                        <li class="list-group-item">Categoría: <mark><?=$categoria['nombreC'];?></mark></li>
                                     </ul>
 
                                     <a href="<?php echo base_url(); ?>/catalogo" class="btn btn-primary rounded mt-4 ms-2"> Regresar <i class="fa fa-undo"> </i></a>
