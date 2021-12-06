@@ -168,7 +168,6 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`idUsuario`, `matricula`, `nombre`, `apellidoP`, `apellidoM`, `grupo`, `password`, `rol`, `created_at`) VALUES
 (1, '18000758', 'Damian', 'Trujillo', 'Cruz', 'IEVN-1001', '$2y$10$G5CwBjGQjEnQoRa.3JAnjOQ9BAZZ2caYZp5kC0AWM7FZ/nV/5Ioka', 2, '2021-12-01 02:34:28'),
-(2, '18000687', 'Asminda', 'Acosta', 'Gómez', 'IEVN-1001', '$2y$10$rZHAWeOjSb9.NMmMBnP5GOMFxnlhE6/V2yyUrnZH/V7zLNLp6Jg0C', 1, '2021-12-02 00:52:32'),
 (3, '18000729', 'Mariana', 'Maldonado', 'Jimenez', 'IEVN-1001', '$2y$10$uJCnJ.7DgGWzE9zAdmvVaOJc05hDM83lJUgXdoXyXbHCgWma.jRye', 0, '2021-12-06 06:41:17'),
 (5, '17000452', 'Federico', 'Medrano', 'Castillan', 'IEVN-1001', '$2y$10$6hwv3NxVfmk8.hdFw7IFe.8dqjHgJQ1qs.A/gUhdeNOLAx3NoF4Uu', 0, '2021-12-06 06:49:55'),
 (6, '18000111', 'Super', 'Administrador', 'Chido', 'No tiene', '$2y$10$b/61PQRT2Vg8o452YP14Oe5ugHjdE0ryN8m6W6G2GeHgYUjlZSzHi', 2, '2021-12-06 18:36:21'),
