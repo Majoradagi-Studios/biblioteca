@@ -19,6 +19,7 @@
                                         
                                         <?php $autor = $autores->where('idAutor',$libro['idAutor'])->first();?>
                                         <p class="card-text">Por: <?=$autor['apellidoA'].' '.$autor['nombreA'];?></p>
+                                        <p class="card-text"><?=$libro['lugarEd'];?></p>
 
                                         <div class="d-grid gap-2 col-6 mx-auto">
                                             <a href="<?=base_url('/catalogo/detalle/'.$libro['idLibro']);?>" class="btn btn-warning"><strong>Detalles</strong></a>

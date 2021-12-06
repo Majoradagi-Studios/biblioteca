@@ -10,8 +10,10 @@ class EjemplarController extends Controller{
     public function adminlistarejemplar()
     {
         $ejemplar = new Ejemplares();
+        $libros = new Libros();
 
-        $datos['ejemplares'] = $ejemplar->orderBy('idEjemplar','ASC')->findAll();
+        $datos['libros'] = $libros;
+        $datos['ejemplares'] = $ejemplar->orderBy('ejemplar','ASC')->findAll();
 
         $datos['header'] = view('admin/template/header');
         $datos['sidebar'] = view('admin/template/sidebar');
@@ -22,6 +24,7 @@ class EjemplarController extends Controller{
 
     public function admincrearejemplar()
     {
+        helper(['form']);
         $libros = new Libros();
 
         $datos['libros'] = $libros->orderBy('idLibro','ASC')->findAll();
@@ -35,14 +38,35 @@ class EjemplarController extends Controller{
 
     public function adminguardarejemplar()
     {
-        $ejemplar = new Ejemplares();
-        $datos = [
-            'ejemplar'=>$this->request->getVar('ejemplar'),
-            'estado'=> 'Disponible',
-            'idLibro'=>$this->request->getVar('idLibro'),
+        helper(['form']);
+        $rules = [
+            'ejemplar'      => 'required|integer|min_length[1]|max_length[3]',
         ];
-        $ejemplar->insert($datos);
-        return $this->response->redirect(base_url('/admin/ejemplar/listar'));
+
+        if($this->validate($rules)){
+
+        $ejemplar = new Ejemplares();
+
+            $datos = [
+                'ejemplar'=>$this->request->getVar('ejemplar'),
+                'estado'=> 'Disponible',
+                'idLibro'=>$this->request->getVar('idLibro'),
+            ];
+            $ejemplar->insert($datos);
+            return $this->response->redirect(base_url('/admin/ejemplar/listar'));
+
+        }else{
+            $libros = new Libros();
+    
+            $datos['libros'] = $libros->orderBy('idLibro','ASC')->findAll();
+            $datos['validation'] = $this->validator;
+
+            $datos['header'] = view('admin/template/header');
+            $datos['sidebar'] = view('admin/template/sidebar');
+            $datos['footer'] = view('admin/template/footer');
+            return view('admin/ejemplar/create', $datos);
+        }
+
     }
 
     public function adminborrarejemplar($idEjemplar)

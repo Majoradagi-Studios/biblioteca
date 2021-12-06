@@ -114,9 +114,9 @@
                         <div class="sb-sidenav-menu-heading text-white">Categorías</div>
 
                         <?php foreach($categorias as $categoria): ?>
-                        <a class="nav-link" href="<?=base_url('/catalogo/buscar/'.$categoria['idCategoria']);?>" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                        <a class="nav-link" href="<?=base_url('/catalogo/buscar/'.$categoria['idCategoria']);?>">
                             <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
-                            <?=$categoria['nombreC'];?>
+                            <?=$categoria['codigoD'].' '.$categoria['nombreC'];?>
                         </a>
                         <?php endforeach;?>
 

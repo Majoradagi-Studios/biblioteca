@@ -39,7 +39,12 @@
                               <th scope="row" class="text-center"><?=$ejemplar['idEjemplar'];?></th>
                               <td><?=$ejemplar['ejemplar'];?></td>
                               <td><?=$ejemplar['estado'];?></td>
-                              <td><?=$ejemplar['idLibro'];?></td>
+
+                              <!--¿Solución definitiva?-->
+                              <?php $libro = $libros->where('idLibro',$ejemplar['idLibro'])->first();?>
+                              <td><?=$libro['titulo'];?></td>
+                              <!-- ------------------- -->
+
                               <td class="center">
                                   <div class="btn-group" role="group" aria-label="Second group">
                                       <a href="<?=base_url('/admin/ejemplar/editar/'.$ejemplar['idEjemplar']);?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>

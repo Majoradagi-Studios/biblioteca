@@ -18,12 +18,22 @@
             </div>
           </div>
 
-
           <div class="row">
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Agregar ejemplar</h5> <br>
+                  
+                  <?php if(isset($validation)):?>
+                      <div class="alert alert-warning">
+                        <?= $validation->listErrors() ?>
+                      </div>
+                    <?php endif;?>
+                    <?php if(isset($verificar)):?>
+                      <div class="alert alert-danger">
+                        <?= $datos['verificar']; ?>
+                      </div>
+                    <?php endif;?>
                   
                   <form action="<?= base_url('/admin/ejemplar/guardar')?>" method="post">
                         <div class="form-group">
