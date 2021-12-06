@@ -20,6 +20,8 @@ class Filters extends BaseConfig
 		'toolbar'  => \CodeIgniter\Filters\DebugToolbar::class,
 		'honeypot' => \CodeIgniter\Filters\Honeypot::class,
 		'authGuard' => \App\Filters\AuthGuard::class,
+        'superGuard' => \App\Filters\SuperGuard::class,
+        'adminGuard' => \App\Filters\AdminGuard::class
 	];
 
     /**
