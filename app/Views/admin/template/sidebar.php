@@ -1,5 +1,4 @@
-
-
+<?php $session = session();?>
       <!-- ============================================================== -->
       <!-- Left Sidebar - style you can find in sidebar.scss  -->
       <!-- ============================================================== -->
@@ -63,6 +62,7 @@
                   ><span class="hide-menu">Libro</span></a
                 >
               </li>
+              <?php if($session->get('rol') == 2  ): ?>
                 <li class="sidebar-item">
                     <a
                         class="sidebar-link waves-effect waves-dark sidebar-link"
@@ -72,6 +72,7 @@
                         ><span class="hide-menu">Usuarios</span></a
                     >
                 </li>
+                <?php endif;?>
             </ul>
           </nav>
           <!-- End Sidebar navigation -->

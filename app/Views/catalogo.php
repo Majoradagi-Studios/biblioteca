@@ -93,7 +93,7 @@
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fas fa-user fa-fw"></i>Bienvenido: <?php echo $session->get('nombre')." ".$session->get('apellidoP');?></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <?php if($session->get('rol') == 1  ): ?>
+                    <?php if($session->get('rol') >= 1  ): ?>
                     <li><a class="dropdown-item" href="<?php echo base_url(); ?>/admin">Administrar</a></li>
                     <li><hr class="dropdown-divider" /></li>
                     <?php endif;?>

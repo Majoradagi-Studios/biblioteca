@@ -36,20 +36,30 @@
                             </tr>
                         </thead>
                         <tbody>
+                          <?php foreach($usuarios as $usuario):?>
                             <tr>
-                                <th scope="row" class="text-center">1</th>
-                                    <td >Mark</td>
-                                    <td>Otto</td>
-                                    <td>Otto</td>
-                                    <td>Otto</td>
-                                    <td>Otto</td>
-                                    <td>Otto</td>
+                                <th scope="row" class="text-center"><?=$usuario['idUsuario'];?></th>
+                                    <td ><?=$usuario['matricula'];?></td>
+                                    <td><?=$usuario['nombre'];?></td>
+                                    <td><?=$usuario['apellidoP'];?></td>
+                                    <td><?=$usuario['apellidoM'];?></td>
+                                    <td><?=$usuario['grupo'];?></td>
+                                    <?php if($usuario['rol'] == 0):?>
+                                    <td>Alumno</td>
+                                    <?php endif; ?>
+                                    <?php if($usuario['rol'] == 1): ?>
+                                    <td>Administrador</td>
+                                    <?php endif; ?>
+                                    <?php if($usuario['rol'] == 2): ?>
+                                    <td>Super</td>
+                                    <?php endif; ?>
                                     <td class="center">
                                         <div class="btn-group" role="group" aria-label="Second group">
-                                            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                            <a href="<?=base_url('admin/usuario/borrar/'.$usuario['idUsuario']);?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                             </tr>
+                          <?php endforeach;?>
                         </tbody>
                     </table>
                 </div>

@@ -93,9 +93,11 @@ $routes->get('/admin/ejemploejemplar/editar/(:num)', 'EjemploController::admined
 $routes->post('/admin/ejemploejemplar/actualizar', 'EjemploController::adminactualizarejemplo');
 
 //Usuario
-$routes->get('/admin/usuario/listar', 'Home::adminlistarusuario');
-$routes->get('/admin/usuario/create', 'Home::admincrearusuario');
-$routes->get('/admin/usuario/edit', 'Home::admineditarusuario');
+$routes->get('/admin/usuario/listar', 'UsuariosController::adminlistarusuario');
+$routes->get('/admin/usuario/create', 'UsuariosController::admincrearusuario');
+$routes->post('/admin/usuario/guardar', 'UsuariosController::adminguardarusuario');
+$routes->get('admin/usuario/borrar/(:num)', 'UsuariosController::adminborrarusuario/$1');
+//$routes->get('/admin/usuario/edit', 'UsuariosController::admineditarusuario');
 
 
 /*

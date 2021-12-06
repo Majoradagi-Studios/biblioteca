@@ -1,4 +1,5 @@
 <?=$header;?>
+<?php $session = session();?>
 
 
           <!-- ============================================================== -->
@@ -8,7 +9,7 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Dashboard</h5> <br>
+                  <h5 class="card-title">Bienvenido(a): <?= $session->get('nombre').' '.$session->get('apellidoP').' '.$session->get('apellidoM');?></h5> <br>
                   <div class="card-group">
                       <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
                         <div class="card-header">Header</div>

@@ -23,27 +23,33 @@
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title"> <i class="fa fa-user"></i> Agregar usuario</h5> <br>
+
+                    <?php if(isset($validation)):?>
+                      <div class="alert alert-warning">
+                        <?= $validation->listErrors() ?>
+                      </div>
+                    <?php endif;?>
                   
-                  <form action="" method="post" enctype="multipart/form-data">
+                  <form action="<?= base_url('/admin/usuario/guardar')?>" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Matrícula</label>
-                            <input type="text" class="form-control" name="matricula">
+                            <input type="text" class="form-control" name="matricula" value="<?= set_value('matricula') ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Nombre</label>
-                            <input type="text" class="form-control" name="nombre">
+                            <input type="text" class="form-control" name="nombre" value="<?= set_value('nombre') ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Apellido Paterno</label>
-                            <input type="text" class="form-control" name="apellidoP">
+                            <input type="text" class="form-control" name="apellidoP" value="<?= set_value('apellidoP') ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Apellido Materno</label>
-                            <input type="text" class="form-control" name="apellidoM">
+                            <input type="text" class="form-control" name="apellidoM" value="<?= set_value('apellidoM') ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Grupo</label>
-                            <input type="text" class="form-control" name="grupo">
+                            <input type="text" class="form-control" name="grupo" value="<?= set_value('grupo') ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Contraseña</label>
@@ -51,14 +57,14 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Confirmar contraseña</label>
-                            <input type="password" class="form-control" name="password">
+                            <input type="password" class="form-control" name="confirmpassword">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Rol</label>
                             <select class="form-select" aria-label="Default select example" name="idCategoria">
                                 <option selected>Seleccione una opción</option>
-                                  <option value="">Alumno</option>
-                                  <option value="">Bibliotecario</option>
+                                  <option value="0">Alumno</option>
+                                  <option value="1">Administrador</option>
                             </select>
                         </div>
                         <button class="btn btn-success rounded-pill" type="submit">Guardar  <i class="fa fa-save"></i></button>
