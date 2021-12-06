@@ -33,7 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->get('/catalogo/detalleLibro', 'Home::detalleLibro');
+$routes->get('/catalogo/detalleLibro', 'Home::detalleLibro', ['filter' => 'authGuard']);
 
 //RUTAS PARA PROBAR EL DISEÑO
 $routes->get('/login', 'Home::login');
@@ -114,3 +114,6 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 //Mis rutas
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/signup', 'SignupController::index');
+$routes->get('/catalogo', 'LibrosController::catalogo', ['filter' => 'authGuard']);
+
+$routes->get('/catalogo/detalle', 'Home::detalleLibro', ['filter' => 'authGuard']);
