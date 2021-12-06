@@ -20,6 +20,17 @@ class LibrosController extends Controller{
         return view('catalogo', $datos);
     }
 
+    public function detalleLibro($idLibro)
+    {
+        $libro = new Libros();
+
+        $datos['libro'] = $libro->where('idLibro', $idLibro)->first();
+        $datos['header'] = view('site/template/header');
+        $datos['footer'] = view('site/template/footer');
+
+        return view('detalleLibro', $datos);
+    }
+
     public function adminlistarlibro() 
     {
         $libros = new Libros();

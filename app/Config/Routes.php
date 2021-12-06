@@ -67,6 +67,8 @@ $routes->post('admin/editorial/actualizar', 'EditorialesController::actualizar')
 
 //Libro
 $routes->get('/catalogo', 'LibrosController::catalogo', ['filter' => 'authGuard']);
+$routes->get('/catalogo/detalle/(:num)', 'LibrosController::detalleLibro/$1', ['filter' => 'authGuard']);
+
 $routes->get('/admin/libro/listar', 'LibrosController::adminlistarlibro');
 $routes->get('/admin/libro/create', 'LibrosController::admincrearlibro');
 $routes->post('/admin/libro/guardar', 'LibrosController::adminguardarlibro');
@@ -114,6 +116,3 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 //Mis rutas
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/signup', 'SignupController::index');
-$routes->get('/catalogo', 'LibrosController::catalogo', ['filter' => 'authGuard']);
-
-$routes->get('/catalogo/detalle', 'Home::detalleLibro', ['filter' => 'authGuard']);

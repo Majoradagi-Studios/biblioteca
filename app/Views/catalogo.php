@@ -176,7 +176,7 @@
                                         <h5 class="card-title"><?=$libro['titulo'];?></h5>
                                         <p class="card-text"><?=$libro['idAutor'];?></p>
                                         <div class="d-grid gap-2 col-6 mx-auto">
-                                            <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
+                                            <a href="<?=base_url('/catalogo/detalle/'.$libro['idLibro']);?>" class="btn btn-warning"><strong>Detalles</strong></a>
                                         </div>
                                     </div>
                                 </div>
