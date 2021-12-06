@@ -88,7 +88,7 @@ $routes->get('/admin/ejemplar/borrar/(:num)', 'EjemplarController::adminborrarej
 $routes->get('/admin/ejemplar/editar/(:num)', 'EjemplarController::admineditarejemplar/$1', ['filter' => 'adminGuard']);
 $routes->post('/admin/ejemplar/actualizar', 'EjemplarController::adminactualizarejemplar', ['filter' => 'adminGuard']);
 
-//Usuario
+//Usuario super
 $routes->get('/admin/usuario/listar', 'UsuariosController::adminlistarusuario', ['filter' => 'superGuard']);
 $routes->get('/admin/usuario/create', 'UsuariosController::admincrearusuario', ['filter' => 'superGuard']);
 $routes->post('/admin/usuario/guardar', 'UsuariosController::adminguardarusuario', ['filter' => 'superGuard']);

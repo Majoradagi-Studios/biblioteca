@@ -26,9 +26,14 @@ class LibrosController extends Controller{
     {
         $libros = new Libros();
         $categorias = new Categorias();
-        //$datos['libros'] = $libros->orderBy('idLibro','ASC')->findAll();
-        $datos['categorias'] = $categorias->orderBy('idCategoria', 'ASC')->findAll();
-        $datos['libros'] = $libros->where('idCategoria', $idCategoria)->first();
+        $autores = new Autor();
+
+        $datos['libros'] = $libros->where('idCategoria', $idCategoria)->findAll();
+        $datos['categoria'] = $categorias->where('idCategoria', $idCategoria)->first();
+        $datos['autores'] = $autores;
+        
+        $datos['header'] = view('site/template/header');
+        $datos['footer'] = view('site/template/footer');
         echo "Cargando...";
         return view('busqueda', $datos);
     }

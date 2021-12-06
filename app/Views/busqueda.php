@@ -5,7 +5,7 @@
                    
                 <div class="container-fluid px-5 mt-4 mb-4">
                     <!-- Aqui inicia el contenido -->                    
-                    <h1>Catálogo de libros</h1>
+                    <h1>Busqueda por categoria: <?=$categoria['nombreC'];?></h1>
                     <small class="">Todos los libros existentes</small>
 
                     <!--libro-->

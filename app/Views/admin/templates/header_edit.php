@@ -170,7 +170,7 @@
                     <a class="dropdown-item" href="<?php echo base_url(); ?>/catalogo">
                         <i class="fa fa-undo me-1 ms-1"></i> Regresar al catalogo</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="<?php echo base_url(); ?>/SigninController/logout">
+                    <a class="dropdown-item" href="<?php echo base_url(); ?>/UsuariosController/logout">
                         <i class="fa fa-power-off me-1 ms-1"></i> Cerrar sesión</a>
                     </ul>
                 </li>

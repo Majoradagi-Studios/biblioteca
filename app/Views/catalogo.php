@@ -97,7 +97,7 @@
                     <li><a class="dropdown-item" href="<?php echo base_url(); ?>/admin">Administrar</a></li>
                     <li><hr class="dropdown-divider" /></li>
                     <?php endif;?>
-                    <li><a class="dropdown-item" href="<?php echo base_url(); ?>/SigninController/logout">Cerrar sesión</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url(); ?>/UsuariosController/logout">Cerrar sesión</a></li>
                 </ul>
             </li>
         </ul>

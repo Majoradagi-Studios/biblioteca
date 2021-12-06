@@ -1,5 +1,9 @@
 <?php $session = session();?>
-
+<?php 
+use App\Models\Categorias;
+$categoria = new Categorias();
+$categorias = $categoria->orderBy('idCategoria', 'ASC')->findAll();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,11 +97,11 @@
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fas fa-user fa-fw"></i>Bienvenido: <?= $session->get('nombre')." ".$session->get('apellidoP');?></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <?php if($session->get('rol') == 1  ): ?>
+                    <?php if($session->get('rol') >= 0  ): ?>
                     <li><a class="dropdown-item" href="<?php echo base_url(); ?>/admin">Administrar</a></li>
                     <li><hr class="dropdown-divider" /></li>
                     <?php endif;?>
-                    <li><a class="dropdown-item" href="<?php echo base_url(); ?>/SigninController/logout">Cerrar sesión</a></li>
+                    <li><a class="dropdown-item" href="<?php echo base_url(); ?>/UsuariosController/logout">Cerrar sesión</a></li>
                 </ul>
             </li>
         </ul>
@@ -111,48 +115,14 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading text-white">Categorías</div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
-                            500 Ciencias naturales y matemáticas
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="  ">510 Matemáticas</a>
-                                <a class="nav-link" href="  ">520 Astronomía y ciencias afines</a>
-                            </nav>
-                        </div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book-book"></i></div>
-                            600 Tecnología y ciencias aplicadas
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                    610 Ciencias médicas
-                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                </a>
-                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                    <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="">611 Cardiología</a>
-                                        <a class="nav-link" href="">612 Medicina general</a>
-                                        <a class="nav-link" href="">613 Nuerología</a>
-                                    </nav>
-                                </div>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                    700 Artes
-                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                </a>
-                                <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                    <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="">710 Urbanismo y arquitectura del paisaje</a>
-                                        <a class="nav-link" href="">720 Arquitectura</a>
-                                        <a class="nav-link" href="">730 Artes plásticas</a>
-                                    </nav>
-                                </div>
-                            </nav>
-                        </div>
+
+                            <?php foreach($categorias as $categoria): ?>
+                            <a class="nav-link" href="<?=base_url('/catalogo/buscar/'.$categoria['idCategoria']);?>">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                                <?=$categoria['codigoD'].' '.$categoria['nombreC'];?>
+                            </a>
+                            <?php endforeach;?>
+                        
                     </div>
                 </div>
             </nav>
