@@ -1,3 +1,17 @@
+# Resumen del desarrrollo de la biblioteca
+
+!Importante! Para poder ingresar a la biblioteca por primera vez se tendra que primero pasar el script de la base de datos que se dejo en el respositorio hacia su localhost.
+Para entrar, el usuario es 18000111 y la contraseña 12345678.
+<br>
+
+## Reporte del estado del proyecto
+Se ha concluido con todos los modulos que se habian preevisto para la elaboración de este proyecto.
+Estos modulos son: Usuarios, Categorias, Editorial, Autores, Libros y Ejemplares.
+Probablemente se haya pasado alguna validación o bug en los modulos pero aparentemente por todo lo demas el proyecto funciona estable.
+Diferenciar entre administradores, alumnos y super tambien esta, solo super puede crear usuarios y solo existe un super, igual el usuario y contraseña esta arriba como se habia comentado.
+Finalmente se agrego el catalogo y el detalle de cada libro, ademas de la funcion de busqueda por categoria.
+<br>
+
 # CodeIgniter 4 Development
 
 [![Build Status](https://github.com/codeigniter4/CodeIgniter4/workflows/PHPUnit/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions?query=workflow%3A%22PHPUnit%22)
