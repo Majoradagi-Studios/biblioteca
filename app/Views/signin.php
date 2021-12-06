@@ -47,11 +47,11 @@
                 </div>
                 <?php endif;?>
  
-				<form action="<?php echo base_url(); ?>/SigninController/loginAuth" class="login100-form validate-form"  method="post">
+				<form action="<?php echo base_url(); ?>/UsuariosController/loginAuth" class="login100-form validate-form"  method="post">
 
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Se requiere un usuario">
 						<span class="label-input100">Usuario</span>
-						<input class="input100" type="text" name="matricula" value="<?= set_value('matricula') ?>" placeholder="Ingrese su matrícula">
+						<input class="input100" type="text" name="matricula" value="<?= old('matricula') ?>" placeholder="Ingrese su matrícula">
 						<span class="focus-input100"></span>
 					</div>
 

@@ -31,9 +31,18 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+//??
 $routes->get('/', 'Home::index');
 
+//Iniciar sesión
+$routes->get('/signin', 'UsuariosController::index');
 
+//Catalogo
+$routes->get('/catalogo', 'LibrosController::catalogo', ['filter' => 'authGuard']);
+$routes->get('/catalogo/detalle/(:num)', 'LibrosController::detalleLibro/$1', ['filter' => 'authGuard']);
+
+//Rutas Admin
 //Admin
 $routes->get('/admin', 'Home::admin', ['filter' => 'adminGuard']);
 
@@ -63,9 +72,6 @@ $routes->get('admin/editorial/edit/(:num)', 'EditorialesController::edit/$1', ['
 $routes->post('admin/editorial/actualizar', 'EditorialesController::actualizar', ['filter' => 'adminGuard']);
 
 //Libro
-$routes->get('/catalogo', 'LibrosController::catalogo', ['filter' => 'authGuard']);
-$routes->get('/catalogo/detalle/(:num)', 'LibrosController::detalleLibro/$1', ['filter' => 'authGuard']);
-//Libro Admin
 $routes->get('/admin/libro/listar', 'LibrosController::adminlistarlibro', ['filter' => 'adminGuard']);
 $routes->get('/admin/libro/create', 'LibrosController::admincrearlibro', ['filter' => 'adminGuard']);
 $routes->post('/admin/libro/guardar', 'LibrosController::adminguardarlibro', ['filter' => 'adminGuard']);
@@ -103,7 +109,3 @@ $routes->get('admin/usuario/borrar/(:num)', 'UsuariosController::adminborrarusua
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
-
-//Mis rutas
-$routes->get('/signin', 'SigninController::index');
-$routes->get('/signup', 'SignupController::index');

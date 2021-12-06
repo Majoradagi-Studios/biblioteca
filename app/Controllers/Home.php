@@ -6,9 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        $datos['header'] = view('site/template/header');
-        $datos['footer'] = view('site/template/footer');
-        return view('inicio', $datos);
+        return $this->response->redirect(base_url('/catalogo'));
     }
 
     public function admin()
