@@ -28,6 +28,7 @@
         <link rel="stylesheet" type="text/css" href="frontend/css/util.css">
         <link rel="stylesheet" type="text/css" href="frontend/css/main.css">
     <!--===============================================================================================-->
+        <link rel="manifest" href="manifest.json">
 
 </head>
 <body>
